@@ -1,35 +1,26 @@
 # Use the official Node.js image as the base image
-FROM node:18 as build
+FROM node:18-alpine
 
-# Create and change to the app directory
-WORKDIR /usr/src/app
+# Set the working directory
+WORKDIR /app
 
-# Copy the package.json and package-lock.json files
+# Copy package.json and package-lock.json (or yarn.lock)
 COPY package*.json ./
 
-# Install dependencies
+# Install the dependencies
 RUN npm install
 
 # Copy the rest of the application code
 COPY . .
 
-# Build the React app
+# Build the Vite project
 RUN npm run build
 
-# Use a lightweight Node.js image to serve the built React app
-FROM node:18-alpine
-
-# Create and change to the app directory
-WORKDIR /usr/src/app
-
-# Copy the build output from the build stage
-COPY --from=build /usr/src/app/build ./build
-
-# Install serve globally
+# Install serve to serve static files
 RUN npm install -g serve
 
-# Expose the port the app runs on
+# Expose the port that the serve will run on
 EXPOSE 3000
 
-# Serve the built React app
-CMD ["serve", "-s", "build", "-l", "3000"]
+# Command to run the serve
+CMD ["serve", "-s", "dist", "-l", "3000"]
