@@ -1,0 +1,92 @@
+openapi: 3.0.3
+info:
+  title: API des Départements - Communes et Médecins
+  version: 1.0.0
+  description: Fournit les communes et les médecins associés à un département donné.
+
+paths:
+  /departements/73/communes:
+    get:
+      summary: Obtenir les communes d'un département
+      description: Retourne la liste des communes pour le département spécifié.
+      responses:
+        '200':
+          description: Liste des communes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Commune'
+        '400':
+          description: Requête invalide
+        '404':
+          description: Département non trouvé
+
+  /departements/73/medecins:
+    get:
+      summary: Obtenir les médecins d'un département
+      description: Retourne la liste des médecins pour le département spécifié. Peut être filtré par code postal.
+      parameters:
+        - name: codePostal
+          in: query
+          required: false
+          description: Filtrer les médecins par code postal
+          schema:
+            type: string
+            example: "73125"
+      responses:
+        '200':
+          description: Liste des médecins
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Medecin'
+        '400':
+          description: Requête invalide
+        '404':
+          description: Données non trouvées
+
+components:
+  schemas:
+    Commune:
+      type: object
+      properties:
+        nom:
+          type: string
+          example: Aiguebelette-le-Lac
+        code:
+          type: string
+          example: "73001"
+        codeDepartement:
+          type: string
+          example: "73"
+        siren:
+          type: string
+          example: "217300011"
+        codeEpci:
+          type: string
+          example: "247300668"
+        codeRegion:
+          type: string
+          example: "84"
+        codesPostaux:
+          type: array
+          items:
+            type: string
+          example: ["73610"]
+        population:
+          type: integer
+          example: 247
+
+    Medecin:
+      type: object
+      properties:
+        nom:
+          type: string
+          example: Dr Jean Dupont
+        adresse:
+          type: string
+          example: 13 rue du grand BAC 73125
