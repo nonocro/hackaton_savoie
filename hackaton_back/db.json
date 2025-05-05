@@ -1,0 +1,3283 @@
+{
+    "communes": [
+        {
+          "nom": "Aiguebelette-le-Lac",
+          "code": "73001",
+          "codeDepartement": "73",
+          "siren": "217300011",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73610"
+          ],
+          "population": 247
+        },
+        {
+          "nom": "Grand-Aigueblanche",
+          "code": "73003",
+          "codeDepartement": "73",
+          "siren": "200084572",
+          "codeEpci": "247300015",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73260"
+          ],
+          "population": 3794
+        },
+        {
+          "nom": "Aillon-le-Jeune",
+          "code": "73004",
+          "codeDepartement": "73",
+          "siren": "217300045",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 429
+        },
+        {
+          "nom": "Aillon-le-Vieux",
+          "code": "73005",
+          "codeDepartement": "73",
+          "siren": "217300052",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 218
+        },
+        {
+          "nom": "Aime-la-Plagne",
+          "code": "73006",
+          "codeDepartement": "73",
+          "siren": "200055762",
+          "codeEpci": "247300817",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73210"
+          ],
+          "population": 4409
+        },
+        {
+          "nom": "Aiton",
+          "code": "73007",
+          "codeDepartement": "73",
+          "siren": "217300078",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 1811
+        },
+        {
+          "nom": "Aix-les-Bains",
+          "code": "73008",
+          "codeDepartement": "73",
+          "siren": "217300086",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 32175
+        },
+        {
+          "nom": "Entrelacs",
+          "code": "73010",
+          "codeDepartement": "73",
+          "siren": "200053833",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73410"
+          ],
+          "population": 6465
+        },
+        {
+          "nom": "Albertville",
+          "code": "73011",
+          "codeDepartement": "73",
+          "siren": "217300110",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 19706
+        },
+        {
+          "nom": "Albiez-le-Jeune",
+          "code": "73012",
+          "codeDepartement": "73",
+          "siren": "217300128",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 141
+        },
+        {
+          "nom": "Albiez-Montrond",
+          "code": "73013",
+          "codeDepartement": "73",
+          "siren": "217300136",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 366
+        },
+        {
+          "nom": "Allondaz",
+          "code": "73014",
+          "codeDepartement": "73",
+          "siren": "217300144",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 295
+        },
+        {
+          "nom": "Les Allues",
+          "code": "73015",
+          "codeDepartement": "73",
+          "siren": "217300151",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73550"
+          ],
+          "population": 1750
+        },
+        {
+          "nom": "Apremont",
+          "code": "73017",
+          "codeDepartement": "73",
+          "siren": "217300177",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73190"
+          ],
+          "population": 968
+        },
+        {
+          "nom": "Arbin",
+          "code": "73018",
+          "codeDepartement": "73",
+          "siren": "217300185",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 816
+        },
+        {
+          "nom": "Argentine",
+          "code": "73019",
+          "codeDepartement": "73",
+          "siren": "217300193",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 952
+        },
+        {
+          "nom": "Arith",
+          "code": "73020",
+          "codeDepartement": "73",
+          "siren": "217300201",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 439
+        },
+        {
+          "nom": "Arvillard",
+          "code": "73021",
+          "codeDepartement": "73",
+          "siren": "217300219",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 849
+        },
+        {
+          "nom": "Attignat-Oncin",
+          "code": "73022",
+          "codeDepartement": "73",
+          "siren": "217300227",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73610"
+          ],
+          "population": 572
+        },
+        {
+          "nom": "Aussois",
+          "code": "73023",
+          "codeDepartement": "73",
+          "siren": "217300235",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73500"
+          ],
+          "population": 682
+        },
+        {
+          "nom": "Les Avanchers-Valmorel",
+          "code": "73024",
+          "codeDepartement": "73",
+          "siren": "217300243",
+          "codeEpci": "247300015",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73260"
+          ],
+          "population": 739
+        },
+        {
+          "nom": "Avressieux",
+          "code": "73025",
+          "codeDepartement": "73",
+          "siren": "217300250",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73240"
+          ],
+          "population": 534
+        },
+        {
+          "nom": "Avrieux",
+          "code": "73026",
+          "codeDepartement": "73",
+          "siren": "217300268",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73500"
+          ],
+          "population": 394
+        },
+        {
+          "nom": "Ayn",
+          "code": "73027",
+          "codeDepartement": "73",
+          "siren": "217300276",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73470"
+          ],
+          "population": 390
+        },
+        {
+          "nom": "La Balme",
+          "code": "73028",
+          "codeDepartement": "73",
+          "siren": "217300284",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 356
+        },
+        {
+          "nom": "Barberaz",
+          "code": "73029",
+          "codeDepartement": "73",
+          "siren": "217300292",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73000"
+          ],
+          "population": 5246
+        },
+        {
+          "nom": "Barby",
+          "code": "73030",
+          "codeDepartement": "73",
+          "siren": "217300300",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73230"
+          ],
+          "population": 3545
+        },
+        {
+          "nom": "Bassens",
+          "code": "73031",
+          "codeDepartement": "73",
+          "siren": "217300318",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73000"
+          ],
+          "population": 5118
+        },
+        {
+          "nom": "La Bâthie",
+          "code": "73032",
+          "codeDepartement": "73",
+          "siren": "217300326",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73540"
+          ],
+          "population": 2168
+        },
+        {
+          "nom": "La Bauche",
+          "code": "73033",
+          "codeDepartement": "73",
+          "siren": "217300334",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73360"
+          ],
+          "population": 541
+        },
+        {
+          "nom": "Beaufort",
+          "code": "73034",
+          "codeDepartement": "73",
+          "siren": "217300342",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73270"
+          ],
+          "population": 1994
+        },
+        {
+          "nom": "Bellecombe-en-Bauges",
+          "code": "73036",
+          "codeDepartement": "73",
+          "siren": "217300367",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 760
+        },
+        {
+          "nom": "Belmont-Tramonet",
+          "code": "73039",
+          "codeDepartement": "73",
+          "siren": "217300391",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73330"
+          ],
+          "population": 512
+        },
+        {
+          "nom": "Bessans",
+          "code": "73040",
+          "codeDepartement": "73",
+          "siren": "217300409",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73480"
+          ],
+          "population": 352
+        },
+        {
+          "nom": "Betton-Bettonet",
+          "code": "73041",
+          "codeDepartement": "73",
+          "siren": "217300417",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 304
+        },
+        {
+          "nom": "Billième",
+          "code": "73042",
+          "codeDepartement": "73",
+          "siren": "217300425",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 262
+        },
+        {
+          "nom": "La Biolle",
+          "code": "73043",
+          "codeDepartement": "73",
+          "siren": "217300433",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73410"
+          ],
+          "population": 2922
+        },
+        {
+          "nom": "Bonneval-sur-Arc",
+          "code": "73047",
+          "codeDepartement": "73",
+          "siren": "217300474",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73480"
+          ],
+          "population": 270
+        },
+        {
+          "nom": "Bonvillard",
+          "code": "73048",
+          "codeDepartement": "73",
+          "siren": "217300482",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 352
+        },
+        {
+          "nom": "Bonvillaret",
+          "code": "73049",
+          "codeDepartement": "73",
+          "siren": "217300490",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 144
+        },
+        {
+          "nom": "Bourdeau",
+          "code": "73050",
+          "codeDepartement": "73",
+          "siren": "217300508",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73370"
+          ],
+          "population": 579
+        },
+        {
+          "nom": "Le Bourget-du-Lac",
+          "code": "73051",
+          "codeDepartement": "73",
+          "siren": "217300516",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73370"
+          ],
+          "population": 5077
+        },
+        {
+          "nom": "Bourget-en-Huile",
+          "code": "73052",
+          "codeDepartement": "73",
+          "siren": "217300524",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 143
+        },
+        {
+          "nom": "Bourgneuf",
+          "code": "73053",
+          "codeDepartement": "73",
+          "siren": "217300532",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 667
+        },
+        {
+          "nom": "Bourg-Saint-Maurice",
+          "code": "73054",
+          "codeDepartement": "73",
+          "siren": "217300540",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73700"
+          ],
+          "population": 7228
+        },
+        {
+          "nom": "Bozel",
+          "code": "73055",
+          "codeDepartement": "73",
+          "siren": "217300557",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73350"
+          ],
+          "population": 2024
+        },
+        {
+          "nom": "Brides-les-Bains",
+          "code": "73057",
+          "codeDepartement": "73",
+          "siren": "217300573",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73570"
+          ],
+          "population": 457
+        },
+        {
+          "nom": "La Bridoire",
+          "code": "73058",
+          "codeDepartement": "73",
+          "siren": "217300581",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73520"
+          ],
+          "population": 1206
+        },
+        {
+          "nom": "Brison-Saint-Innocent",
+          "code": "73059",
+          "codeDepartement": "73",
+          "siren": "217300599",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 2443
+        },
+        {
+          "nom": "Césarches",
+          "code": "73061",
+          "codeDepartement": "73",
+          "siren": "217300615",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 431
+        },
+        {
+          "nom": "Cevins",
+          "code": "73063",
+          "codeDepartement": "73",
+          "siren": "217300631",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73730"
+          ],
+          "population": 707
+        },
+        {
+          "nom": "Challes-les-Eaux",
+          "code": "73064",
+          "codeDepartement": "73",
+          "siren": "217300649",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73190"
+          ],
+          "population": 5626
+        },
+        {
+          "nom": "Chambéry",
+          "code": "73065",
+          "codeDepartement": "73",
+          "siren": "217300656",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73000"
+          ],
+          "population": 60251
+        },
+        {
+          "nom": "La Chambre",
+          "code": "73067",
+          "codeDepartement": "73",
+          "siren": "217300672",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 1191
+        },
+        {
+          "nom": "Chamousset",
+          "code": "73068",
+          "codeDepartement": "73",
+          "siren": "217300680",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 615
+        },
+        {
+          "nom": "Chamoux-sur-Gelon",
+          "code": "73069",
+          "codeDepartement": "73",
+          "siren": "217300698",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 961
+        },
+        {
+          "nom": "Champagneux",
+          "code": "73070",
+          "codeDepartement": "73",
+          "siren": "217300706",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73240"
+          ],
+          "population": 671
+        },
+        {
+          "nom": "Champagny-en-Vanoise",
+          "code": "73071",
+          "codeDepartement": "73",
+          "siren": "217300714",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73350"
+          ],
+          "population": 545
+        },
+        {
+          "nom": "Champ-Laurent",
+          "code": "73072",
+          "codeDepartement": "73",
+          "siren": "217300722",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 31
+        },
+        {
+          "nom": "Chanaz",
+          "code": "73073",
+          "codeDepartement": "73",
+          "siren": "217300730",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 551
+        },
+        {
+          "nom": "La Chapelle",
+          "code": "73074",
+          "codeDepartement": "73",
+          "siren": "217300748",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73660"
+          ],
+          "population": 327
+        },
+        {
+          "nom": "La Chapelle-Blanche",
+          "code": "73075",
+          "codeDepartement": "73",
+          "siren": "217300755",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 591
+        },
+        {
+          "nom": "La Chapelle-du-Mont-du-Chat",
+          "code": "73076",
+          "codeDepartement": "73",
+          "siren": "217300763",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73370"
+          ],
+          "population": 267
+        },
+        {
+          "nom": "Les Chapelles",
+          "code": "73077",
+          "codeDepartement": "73",
+          "siren": "217300771",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73700"
+          ],
+          "population": 566
+        },
+        {
+          "nom": "La Chapelle-Saint-Martin",
+          "code": "73078",
+          "codeDepartement": "73",
+          "siren": "217300789",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 146
+        },
+        {
+          "nom": "Châteauneuf",
+          "code": "73079",
+          "codeDepartement": "73",
+          "siren": "217300797",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 922
+        },
+        {
+          "nom": "Le Châtelard",
+          "code": "73081",
+          "codeDepartement": "73",
+          "siren": "217300813",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73630"
+          ],
+          "population": 662
+        },
+        {
+          "nom": "La Chavanne",
+          "code": "73082",
+          "codeDepartement": "73",
+          "siren": "217300821",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 725
+        },
+        {
+          "nom": "Les Chavannes-en-Maurienne",
+          "code": "73083",
+          "codeDepartement": "73",
+          "siren": "217300839",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73660"
+          ],
+          "population": 216
+        },
+        {
+          "nom": "Chignin",
+          "code": "73084",
+          "codeDepartement": "73",
+          "siren": "217300847",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 910
+        },
+        {
+          "nom": "Chindrieux",
+          "code": "73085",
+          "codeDepartement": "73",
+          "siren": "217300854",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 1488
+        },
+        {
+          "nom": "Cléry",
+          "code": "73086",
+          "codeDepartement": "73",
+          "siren": "217300862",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 374
+        },
+        {
+          "nom": "Cognin",
+          "code": "73087",
+          "codeDepartement": "73",
+          "siren": "217300870",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73160"
+          ],
+          "population": 6729
+        },
+        {
+          "nom": "Cohennoz",
+          "code": "73088",
+          "codeDepartement": "73",
+          "siren": "217300888",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73400",
+            "73590"
+          ],
+          "population": 140
+        },
+        {
+          "nom": "Coise-Saint-Jean-Pied-Gauthier",
+          "code": "73089",
+          "codeDepartement": "73",
+          "siren": "217300896",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 1306
+        },
+        {
+          "nom": "La Compôte",
+          "code": "73090",
+          "codeDepartement": "73",
+          "siren": "217300904",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73630"
+          ],
+          "population": 266
+        },
+        {
+          "nom": "Conjux",
+          "code": "73091",
+          "codeDepartement": "73",
+          "siren": "217300912",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 216
+        },
+        {
+          "nom": "Corbel",
+          "code": "73092",
+          "codeDepartement": "73",
+          "siren": "217300920",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73160"
+          ],
+          "population": 155
+        },
+        {
+          "nom": "Crest-Voland",
+          "code": "73094",
+          "codeDepartement": "73",
+          "siren": "217300946",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73590"
+          ],
+          "population": 338
+        },
+        {
+          "nom": "La Croix-de-la-Rochette",
+          "code": "73095",
+          "codeDepartement": "73",
+          "siren": "217300953",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 382
+        },
+        {
+          "nom": "Cruet",
+          "code": "73096",
+          "codeDepartement": "73",
+          "siren": "217300961",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 1042
+        },
+        {
+          "nom": "Curienne",
+          "code": "73097",
+          "codeDepartement": "73",
+          "siren": "217300979",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73190"
+          ],
+          "population": 693
+        },
+        {
+          "nom": "Les Déserts",
+          "code": "73098",
+          "codeDepartement": "73",
+          "siren": "217300987",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73230"
+          ],
+          "population": 826
+        },
+        {
+          "nom": "Détrier",
+          "code": "73099",
+          "codeDepartement": "73",
+          "siren": "217300995",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 431
+        },
+        {
+          "nom": "Domessin",
+          "code": "73100",
+          "codeDepartement": "73",
+          "siren": "217301001",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73330"
+          ],
+          "population": 1999
+        },
+        {
+          "nom": "Doucy-en-Bauges",
+          "code": "73101",
+          "codeDepartement": "73",
+          "siren": "217301019",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73630"
+          ],
+          "population": 95
+        },
+        {
+          "nom": "Drumettaz-Clarafond",
+          "code": "73103",
+          "codeDepartement": "73",
+          "siren": "217301035",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73420"
+          ],
+          "population": 3016
+        },
+        {
+          "nom": "Dullin",
+          "code": "73104",
+          "codeDepartement": "73",
+          "siren": "217301043",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73610"
+          ],
+          "population": 493
+        },
+        {
+          "nom": "Les Échelles",
+          "code": "73105",
+          "codeDepartement": "73",
+          "siren": "217301050",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73360"
+          ],
+          "population": 1270
+        },
+        {
+          "nom": "École",
+          "code": "73106",
+          "codeDepartement": "73",
+          "siren": "217301068",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73630"
+          ],
+          "population": 307
+        },
+        {
+          "nom": "Entremont-le-Vieux",
+          "code": "73107",
+          "codeDepartement": "73",
+          "siren": "217301076",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73670"
+          ],
+          "population": 646
+        },
+        {
+          "nom": "Épierre",
+          "code": "73109",
+          "codeDepartement": "73",
+          "siren": "217301092",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 762
+        },
+        {
+          "nom": "Esserts-Blay",
+          "code": "73110",
+          "codeDepartement": "73",
+          "siren": "217301100",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73540"
+          ],
+          "population": 758
+        },
+        {
+          "nom": "Feissons-sur-Salins",
+          "code": "73113",
+          "codeDepartement": "73",
+          "siren": "217301134",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73350"
+          ],
+          "population": 174
+        },
+        {
+          "nom": "Flumet",
+          "code": "73114",
+          "codeDepartement": "73",
+          "siren": "217301142",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73590"
+          ],
+          "population": 798
+        },
+        {
+          "nom": "Fontcouverte-la-Toussuire",
+          "code": "73116",
+          "codeDepartement": "73",
+          "siren": "217301167",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 482
+        },
+        {
+          "nom": "Fourneaux",
+          "code": "73117",
+          "codeDepartement": "73",
+          "siren": "217301175",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73500"
+          ],
+          "population": 701
+        },
+        {
+          "nom": "Freney",
+          "code": "73119",
+          "codeDepartement": "73",
+          "siren": "217301191",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73500"
+          ],
+          "population": 107
+        },
+        {
+          "nom": "Fréterive",
+          "code": "73120",
+          "codeDepartement": "73",
+          "siren": "217301209",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73250"
+          ],
+          "population": 632
+        },
+        {
+          "nom": "Frontenex",
+          "code": "73121",
+          "codeDepartement": "73",
+          "siren": "217301217",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 1917
+        },
+        {
+          "nom": "Gerbaix",
+          "code": "73122",
+          "codeDepartement": "73",
+          "siren": "217301225",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73470"
+          ],
+          "population": 445
+        },
+        {
+          "nom": "La Giettaz",
+          "code": "73123",
+          "codeDepartement": "73",
+          "siren": "217301233",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73590"
+          ],
+          "population": 379
+        },
+        {
+          "nom": "Gilly-sur-Isère",
+          "code": "73124",
+          "codeDepartement": "73",
+          "siren": "217301241",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 3109
+        },
+        {
+          "nom": "Grésy-sur-Aix",
+          "code": "73128",
+          "codeDepartement": "73",
+          "siren": "217301282",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 4633
+        },
+        {
+          "nom": "Grésy-sur-Isère",
+          "code": "73129",
+          "codeDepartement": "73",
+          "siren": "217301290",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 1197
+        },
+        {
+          "nom": "Grignon",
+          "code": "73130",
+          "codeDepartement": "73",
+          "siren": "217301308",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 2104
+        },
+        {
+          "nom": "Hautecour",
+          "code": "73131",
+          "codeDepartement": "73",
+          "siren": "217301316",
+          "codeEpci": "200023299",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73600"
+          ],
+          "population": 298
+        },
+        {
+          "nom": "Hauteluce",
+          "code": "73132",
+          "codeDepartement": "73",
+          "siren": "217301324",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73620"
+          ],
+          "population": 741
+        },
+        {
+          "nom": "Hauteville",
+          "code": "73133",
+          "codeDepartement": "73",
+          "siren": "217301332",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 350
+        },
+        {
+          "nom": "La Tour-en-Maurienne",
+          "code": "73135",
+          "codeDepartement": "73",
+          "siren": "200084523",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 1091
+        },
+        {
+          "nom": "Jacob-Bellecombette",
+          "code": "73137",
+          "codeDepartement": "73",
+          "siren": "217301373",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73000"
+          ],
+          "population": 4340
+        },
+        {
+          "nom": "Jarrier",
+          "code": "73138",
+          "codeDepartement": "73",
+          "siren": "217301381",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 502
+        },
+        {
+          "nom": "Jarsy",
+          "code": "73139",
+          "codeDepartement": "73",
+          "siren": "217301399",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73630"
+          ],
+          "population": 255
+        },
+        {
+          "nom": "Jongieux",
+          "code": "73140",
+          "codeDepartement": "73",
+          "siren": "217301407",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 284
+        },
+        {
+          "nom": "Laissaud",
+          "code": "73141",
+          "codeDepartement": "73",
+          "siren": "217301415",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 752
+        },
+        {
+          "nom": "Landry",
+          "code": "73142",
+          "codeDepartement": "73",
+          "siren": "217301423",
+          "codeEpci": "247300817",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73210"
+          ],
+          "population": 810
+        },
+        {
+          "nom": "Lépin-le-Lac",
+          "code": "73145",
+          "codeDepartement": "73",
+          "siren": "217301456",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73610"
+          ],
+          "population": 466
+        },
+        {
+          "nom": "Lescheraines",
+          "code": "73146",
+          "codeDepartement": "73",
+          "siren": "217301464",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 798
+        },
+        {
+          "nom": "Loisieux",
+          "code": "73147",
+          "codeDepartement": "73",
+          "siren": "217301472",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 224
+        },
+        {
+          "nom": "Lucey",
+          "code": "73149",
+          "codeDepartement": "73",
+          "siren": "217301498",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 290
+        },
+        {
+          "nom": "La Plagne Tarentaise",
+          "code": "73150",
+          "codeDepartement": "73",
+          "siren": "200055499",
+          "codeEpci": "247300817",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73210"
+          ],
+          "population": 3825
+        },
+        {
+          "nom": "Porte-de-Savoie",
+          "code": "73151",
+          "codeDepartement": "73",
+          "siren": "200083681",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 3944
+        },
+        {
+          "nom": "Marcieux",
+          "code": "73152",
+          "codeDepartement": "73",
+          "siren": "217301522",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73470"
+          ],
+          "population": 237
+        },
+        {
+          "nom": "Marthod",
+          "code": "73153",
+          "codeDepartement": "73",
+          "siren": "217301530",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73400"
+          ],
+          "population": 1342
+        },
+        {
+          "nom": "Mercury",
+          "code": "73154",
+          "codeDepartement": "73",
+          "siren": "217301548",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 3471
+        },
+        {
+          "nom": "Méry",
+          "code": "73155",
+          "codeDepartement": "73",
+          "siren": "217301555",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73420"
+          ],
+          "population": 2143
+        },
+        {
+          "nom": "Meyrieux-Trouet",
+          "code": "73156",
+          "codeDepartement": "73",
+          "siren": "217301563",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 337
+        },
+        {
+          "nom": "Modane",
+          "code": "73157",
+          "codeDepartement": "73",
+          "siren": "217301571",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73500"
+          ],
+          "population": 2879
+        },
+        {
+          "nom": "Les Mollettes",
+          "code": "73159",
+          "codeDepartement": "73",
+          "siren": "217301597",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 870
+        },
+        {
+          "nom": "Montagnole",
+          "code": "73160",
+          "codeDepartement": "73",
+          "siren": "217301605",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73000"
+          ],
+          "population": 1000
+        },
+        {
+          "nom": "Montagny",
+          "code": "73161",
+          "codeDepartement": "73",
+          "siren": "217301613",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73350"
+          ],
+          "population": 659
+        },
+        {
+          "nom": "Montailleur",
+          "code": "73162",
+          "codeDepartement": "73",
+          "siren": "217301621",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 664
+        },
+        {
+          "nom": "Montcel",
+          "code": "73164",
+          "codeDepartement": "73",
+          "siren": "217301647",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 1090
+        },
+        {
+          "nom": "Montendry",
+          "code": "73166",
+          "codeDepartement": "73",
+          "siren": "217301662",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 50
+        },
+        {
+          "nom": "Montgilbert",
+          "code": "73168",
+          "codeDepartement": "73",
+          "siren": "217301688",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 115
+        },
+        {
+          "nom": "Monthion",
+          "code": "73170",
+          "codeDepartement": "73",
+          "siren": "217301704",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 520
+        },
+        {
+          "nom": "Montmélian",
+          "code": "73171",
+          "codeDepartement": "73",
+          "siren": "217301712",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 4041
+        },
+        {
+          "nom": "Montricher-Albanne",
+          "code": "73173",
+          "codeDepartement": "73",
+          "siren": "217301738",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73870"
+          ],
+          "population": 477
+        },
+        {
+          "nom": "Montsapey",
+          "code": "73175",
+          "codeDepartement": "73",
+          "siren": "217301753",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 83
+        },
+        {
+          "nom": "Montvalezan",
+          "code": "73176",
+          "codeDepartement": "73",
+          "siren": "217301761",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73700"
+          ],
+          "population": 729
+        },
+        {
+          "nom": "Montvernier",
+          "code": "73177",
+          "codeDepartement": "73",
+          "siren": "217301779",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 237
+        },
+        {
+          "nom": "La Motte-en-Bauges",
+          "code": "73178",
+          "codeDepartement": "73",
+          "siren": "217301787",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 514
+        },
+        {
+          "nom": "La Motte-Servolex",
+          "code": "73179",
+          "codeDepartement": "73",
+          "siren": "217301795",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73290"
+          ],
+          "population": 12167
+        },
+        {
+          "nom": "Motz",
+          "code": "73180",
+          "codeDepartement": "73",
+          "siren": "217301803",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 467
+        },
+        {
+          "nom": "Moûtiers",
+          "code": "73181",
+          "codeDepartement": "73",
+          "siren": "217301811",
+          "codeEpci": "200023299",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73600"
+          ],
+          "population": 3482
+        },
+        {
+          "nom": "Mouxy",
+          "code": "73182",
+          "codeDepartement": "73",
+          "siren": "217301829",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 2291
+        },
+        {
+          "nom": "Myans",
+          "code": "73183",
+          "codeDepartement": "73",
+          "siren": "217301837",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 1294
+        },
+        {
+          "nom": "Nances",
+          "code": "73184",
+          "codeDepartement": "73",
+          "siren": "217301845",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73470"
+          ],
+          "population": 534
+        },
+        {
+          "nom": "Notre-Dame-de-Bellecombe",
+          "code": "73186",
+          "codeDepartement": "73",
+          "siren": "217301860",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73590"
+          ],
+          "population": 468
+        },
+        {
+          "nom": "La Léchère",
+          "code": "73187",
+          "codeDepartement": "73",
+          "siren": "200084705",
+          "codeEpci": "247300015",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73260"
+          ],
+          "population": 2536
+        },
+        {
+          "nom": "Notre-Dame-des-Millières",
+          "code": "73188",
+          "codeDepartement": "73",
+          "siren": "217301886",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 1000
+        },
+        {
+          "nom": "Notre-Dame-du-Cruet",
+          "code": "73189",
+          "codeDepartement": "73",
+          "siren": "217301894",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 221
+        },
+        {
+          "nom": "Notre-Dame-du-Pré",
+          "code": "73190",
+          "codeDepartement": "73",
+          "siren": "217301902",
+          "codeEpci": "200023299",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73600"
+          ],
+          "population": 256
+        },
+        {
+          "nom": "Novalaise",
+          "code": "73191",
+          "codeDepartement": "73",
+          "siren": "217301910",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73470"
+          ],
+          "population": 2243
+        },
+        {
+          "nom": "Le Noyer",
+          "code": "73192",
+          "codeDepartement": "73",
+          "siren": "217301928",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 220
+        },
+        {
+          "nom": "Ontex",
+          "code": "73193",
+          "codeDepartement": "73",
+          "siren": "217301936",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 92
+        },
+        {
+          "nom": "Orelle",
+          "code": "73194",
+          "codeDepartement": "73",
+          "siren": "217301944",
+          "codeEpci": "247300452",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73140"
+          ],
+          "population": 321
+        },
+        {
+          "nom": "Pallud",
+          "code": "73196",
+          "codeDepartement": "73",
+          "siren": "217301969",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 792
+        },
+        {
+          "nom": "Peisey-Nancroix",
+          "code": "73197",
+          "codeDepartement": "73",
+          "siren": "217301977",
+          "codeEpci": "247300817",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73210"
+          ],
+          "population": 633
+        },
+        {
+          "nom": "Planaise",
+          "code": "73200",
+          "codeDepartement": "73",
+          "siren": "217302009",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 558
+        },
+        {
+          "nom": "Planay",
+          "code": "73201",
+          "codeDepartement": "73",
+          "siren": "217302017",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73350"
+          ],
+          "population": 441
+        },
+        {
+          "nom": "Plancherine",
+          "code": "73202",
+          "codeDepartement": "73",
+          "siren": "217302025",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 462
+        },
+        {
+          "nom": "Le Pont-de-Beauvoisin",
+          "code": "73204",
+          "codeDepartement": "73",
+          "siren": "217302041",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73330"
+          ],
+          "population": 2106
+        },
+        {
+          "nom": "Le Pontet",
+          "code": "73205",
+          "codeDepartement": "73",
+          "siren": "217302058",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 133
+        },
+        {
+          "nom": "Pralognan-la-Vanoise",
+          "code": "73206",
+          "codeDepartement": "73",
+          "siren": "217302066",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73710"
+          ],
+          "population": 700
+        },
+        {
+          "nom": "Presle",
+          "code": "73207",
+          "codeDepartement": "73",
+          "siren": "217302074",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 434
+        },
+        {
+          "nom": "Pugny-Chatenod",
+          "code": "73208",
+          "codeDepartement": "73",
+          "siren": "217302082",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 1060
+        },
+        {
+          "nom": "Puygros",
+          "code": "73210",
+          "codeDepartement": "73",
+          "siren": "217302108",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73190"
+          ],
+          "population": 375
+        },
+        {
+          "nom": "Queige",
+          "code": "73211",
+          "codeDepartement": "73",
+          "siren": "217302116",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73720"
+          ],
+          "population": 901
+        },
+        {
+          "nom": "Val-d'Arc",
+          "code": "73212",
+          "codeDepartement": "73",
+          "siren": "200086569",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 2009
+        },
+        {
+          "nom": "La Ravoire",
+          "code": "73213",
+          "codeDepartement": "73",
+          "siren": "217302132",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73490"
+          ],
+          "population": 9154
+        },
+        {
+          "nom": "Rochefort",
+          "code": "73214",
+          "codeDepartement": "73",
+          "siren": "217302140",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73240"
+          ],
+          "population": 250
+        },
+        {
+          "nom": "Valgelon-La Rochette",
+          "code": "73215",
+          "codeDepartement": "73",
+          "siren": "200086882",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 4185
+        },
+        {
+          "nom": "Rognaix",
+          "code": "73216",
+          "codeDepartement": "73",
+          "siren": "217302165",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73730"
+          ],
+          "population": 487
+        },
+        {
+          "nom": "Rotherens",
+          "code": "73217",
+          "codeDepartement": "73",
+          "siren": "217302173",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 375
+        },
+        {
+          "nom": "Ruffieux",
+          "code": "73218",
+          "codeDepartement": "73",
+          "siren": "217302181",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 808
+        },
+        {
+          "nom": "Saint-Alban-de-Montbel",
+          "code": "73219",
+          "codeDepartement": "73",
+          "siren": "217302199",
+          "codeEpci": "247300668",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73610"
+          ],
+          "population": 685
+        },
+        {
+          "nom": "Saint-Alban-d'Hurtières",
+          "code": "73220",
+          "codeDepartement": "73",
+          "siren": "217302207",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 387
+        },
+        {
+          "nom": "Saint-Alban-des-Villards",
+          "code": "73221",
+          "codeDepartement": "73",
+          "siren": "217302215",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 88
+        },
+        {
+          "nom": "Saint-Alban-Leysse",
+          "code": "73222",
+          "codeDepartement": "73",
+          "siren": "217302223",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73230"
+          ],
+          "population": 6589
+        },
+        {
+          "nom": "Saint-André",
+          "code": "73223",
+          "codeDepartement": "73",
+          "siren": "217302231",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73500"
+          ],
+          "population": 447
+        },
+        {
+          "nom": "Saint-Avre",
+          "code": "73224",
+          "codeDepartement": "73",
+          "siren": "217302249",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 895
+        },
+        {
+          "nom": "Saint-Baldoph",
+          "code": "73225",
+          "codeDepartement": "73",
+          "siren": "217302256",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73190"
+          ],
+          "population": 2827
+        },
+        {
+          "nom": "Saint-Béron",
+          "code": "73226",
+          "codeDepartement": "73",
+          "siren": "217302264",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73520"
+          ],
+          "population": 1720
+        },
+        {
+          "nom": "Courchevel",
+          "code": "73227",
+          "codeDepartement": "73",
+          "siren": "200064038",
+          "codeEpci": "200040798",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73120"
+          ],
+          "population": 2295
+        },
+        {
+          "nom": "Saint-Cassin",
+          "code": "73228",
+          "codeDepartement": "73",
+          "siren": "217302280",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73160"
+          ],
+          "population": 1009
+        },
+        {
+          "nom": "Saint-Christophe",
+          "code": "73229",
+          "codeDepartement": "73",
+          "siren": "217302298",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73360"
+          ],
+          "population": 538
+        },
+        {
+          "nom": "Saint-Colomban-des-Villards",
+          "code": "73230",
+          "codeDepartement": "73",
+          "siren": "217302306",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 138
+        },
+        {
+          "nom": "Saint-Étienne-de-Cuines",
+          "code": "73231",
+          "codeDepartement": "73",
+          "siren": "217302314",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 1193
+        },
+        {
+          "nom": "Sainte-Foy-Tarentaise",
+          "code": "73232",
+          "codeDepartement": "73",
+          "siren": "217302322",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73640"
+          ],
+          "population": 690
+        },
+        {
+          "nom": "Saint-Franc",
+          "code": "73233",
+          "codeDepartement": "73",
+          "siren": "217302330",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73360"
+          ],
+          "population": 155
+        },
+        {
+          "nom": "Saint-François-de-Sales",
+          "code": "73234",
+          "codeDepartement": "73",
+          "siren": "217302348",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73340"
+          ],
+          "population": 176
+        },
+        {
+          "nom": "Saint François Longchamp",
+          "code": "73235",
+          "codeDepartement": "73",
+          "siren": "200072270",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 487
+        },
+        {
+          "nom": "Saint-Genix-les-Villages",
+          "code": "73236",
+          "codeDepartement": "73",
+          "siren": "200084242",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73240"
+          ],
+          "population": 3028
+        },
+        {
+          "nom": "Saint-Georges-d'Hurtières",
+          "code": "73237",
+          "codeDepartement": "73",
+          "siren": "217302371",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 409
+        },
+        {
+          "nom": "Sainte-Hélène-du-Lac",
+          "code": "73240",
+          "codeDepartement": "73",
+          "siren": "217302405",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 835
+        },
+        {
+          "nom": "Sainte-Hélène-sur-Isère",
+          "code": "73241",
+          "codeDepartement": "73",
+          "siren": "217302413",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 1227
+        },
+        {
+          "nom": "Saint-Jean-d'Arves",
+          "code": "73242",
+          "codeDepartement": "73",
+          "siren": "217302421",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73530"
+          ],
+          "population": 271
+        },
+        {
+          "nom": "Saint-Jean-d'Arvey",
+          "code": "73243",
+          "codeDepartement": "73",
+          "siren": "217302439",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73230"
+          ],
+          "population": 1704
+        },
+        {
+          "nom": "Saint-Jean-de-Chevelu",
+          "code": "73245",
+          "codeDepartement": "73",
+          "siren": "217302454",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 837
+        },
+        {
+          "nom": "Saint-Jean-de-Couz",
+          "code": "73246",
+          "codeDepartement": "73",
+          "siren": "217302462",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73160"
+          ],
+          "population": 303
+        },
+        {
+          "nom": "Saint-Jean-de-la-Porte",
+          "code": "73247",
+          "codeDepartement": "73",
+          "siren": "217302470",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73250"
+          ],
+          "population": 977
+        },
+        {
+          "nom": "Saint-Jean-de-Maurienne",
+          "code": "73248",
+          "codeDepartement": "73",
+          "siren": "217302488",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 7524
+        },
+        {
+          "nom": "Saint-Jeoire-Prieuré",
+          "code": "73249",
+          "codeDepartement": "73",
+          "siren": "217302496",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73190"
+          ],
+          "population": 1965
+        },
+        {
+          "nom": "Saint-Julien-Mont-Denis",
+          "code": "73250",
+          "codeDepartement": "73",
+          "siren": "217302504",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73870"
+          ],
+          "population": 1510
+        },
+        {
+          "nom": "Saint-Léger",
+          "code": "73252",
+          "codeDepartement": "73",
+          "siren": "217302520",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 256
+        },
+        {
+          "nom": "Saint-Marcel",
+          "code": "73253",
+          "codeDepartement": "73",
+          "siren": "217302538",
+          "codeEpci": "200023299",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73600"
+          ],
+          "population": 615
+        },
+        {
+          "nom": "Sainte-Marie-d'Alvey",
+          "code": "73254",
+          "codeDepartement": "73",
+          "siren": "217302546",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73240"
+          ],
+          "population": 128
+        },
+        {
+          "nom": "Sainte-Marie-de-Cuines",
+          "code": "73255",
+          "codeDepartement": "73",
+          "siren": "217302553",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 840
+        },
+        {
+          "nom": "Saint-Martin-d'Arc",
+          "code": "73256",
+          "codeDepartement": "73",
+          "siren": "217302561",
+          "codeEpci": "247300452",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73140"
+          ],
+          "population": 302
+        },
+        {
+          "nom": "Les Belleville",
+          "code": "73257",
+          "codeDepartement": "73",
+          "siren": "200084606",
+          "codeEpci": "200023299",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73440",
+            "73600"
+          ],
+          "population": 3488
+        },
+        {
+          "nom": "Saint-Martin-de-la-Porte",
+          "code": "73258",
+          "codeDepartement": "73",
+          "siren": "217302587",
+          "codeEpci": "247300452",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73140"
+          ],
+          "population": 692
+        },
+        {
+          "nom": "Saint-Martin-sur-la-Chambre",
+          "code": "73259",
+          "codeDepartement": "73",
+          "siren": "217302595",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73130"
+          ],
+          "population": 530
+        },
+        {
+          "nom": "Saint-Michel-de-Maurienne",
+          "code": "73261",
+          "codeDepartement": "73",
+          "siren": "217302611",
+          "codeEpci": "247300452",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73140"
+          ],
+          "population": 2432
+        },
+        {
+          "nom": "Saint-Nicolas-la-Chapelle",
+          "code": "73262",
+          "codeDepartement": "73",
+          "siren": "217302629",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73590"
+          ],
+          "population": 490
+        },
+        {
+          "nom": "Saint-Offenge",
+          "code": "73263",
+          "codeDepartement": "73",
+          "siren": "200049393",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 1163
+        },
+        {
+          "nom": "Saint-Ours",
+          "code": "73265",
+          "codeDepartement": "73",
+          "siren": "217302652",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73410"
+          ],
+          "population": 760
+        },
+        {
+          "nom": "Saint-Pancrace",
+          "code": "73267",
+          "codeDepartement": "73",
+          "siren": "217302678",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 305
+        },
+        {
+          "nom": "Saint-Paul-sur-Isère",
+          "code": "73268",
+          "codeDepartement": "73",
+          "siren": "217302686",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73730"
+          ],
+          "population": 533
+        },
+        {
+          "nom": "Saint-Paul-sur-Yenne",
+          "code": "73269",
+          "codeDepartement": "73",
+          "siren": "217302694",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 750
+        },
+        {
+          "nom": "Saint-Pierre-d'Albigny",
+          "code": "73270",
+          "codeDepartement": "73",
+          "siren": "217302702",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73250"
+          ],
+          "population": 4175
+        },
+        {
+          "nom": "Saint-Pierre-d'Alvey",
+          "code": "73271",
+          "codeDepartement": "73",
+          "siren": "217302710",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 309
+        },
+        {
+          "nom": "Saint-Pierre-de-Belleville",
+          "code": "73272",
+          "codeDepartement": "73",
+          "siren": "217302728",
+          "codeEpci": "247300676",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73220"
+          ],
+          "population": 176
+        },
+        {
+          "nom": "Saint-Pierre-de-Curtille",
+          "code": "73273",
+          "codeDepartement": "73",
+          "siren": "217302736",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 488
+        },
+        {
+          "nom": "Saint-Pierre-d'Entremont",
+          "code": "73274",
+          "codeDepartement": "73",
+          "siren": "217302744",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73670"
+          ],
+          "population": 404
+        },
+        {
+          "nom": "Saint-Pierre-de-Genebroz",
+          "code": "73275",
+          "codeDepartement": "73",
+          "siren": "217302751",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73360"
+          ],
+          "population": 327
+        },
+        {
+          "nom": "Saint-Pierre-de-Soucy",
+          "code": "73276",
+          "codeDepartement": "73",
+          "siren": "217302769",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 423
+        },
+        {
+          "nom": "Sainte-Reine",
+          "code": "73277",
+          "codeDepartement": "73",
+          "siren": "217302777",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73630"
+          ],
+          "population": 170
+        },
+        {
+          "nom": "Saint-Rémy-de-Maurienne",
+          "code": "73278",
+          "codeDepartement": "73",
+          "siren": "217302785",
+          "codeEpci": "247300361",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73660"
+          ],
+          "population": 1263
+        },
+        {
+          "nom": "Saint-Sorlin-d'Arves",
+          "code": "73280",
+          "codeDepartement": "73",
+          "siren": "217302801",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73530"
+          ],
+          "population": 347
+        },
+        {
+          "nom": "Saint-Sulpice",
+          "code": "73281",
+          "codeDepartement": "73",
+          "siren": "217302819",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73160"
+          ],
+          "population": 820
+        },
+        {
+          "nom": "Saint-Thibaud-de-Couz",
+          "code": "73282",
+          "codeDepartement": "73",
+          "siren": "217302827",
+          "codeEpci": "200040111",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73160"
+          ],
+          "population": 1097
+        },
+        {
+          "nom": "Saint-Vital",
+          "code": "73283",
+          "codeDepartement": "73",
+          "siren": "217302835",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 761
+        },
+        {
+          "nom": "Salins-Fontaine",
+          "code": "73284",
+          "codeDepartement": "73",
+          "siren": "200056273",
+          "codeEpci": "200023299",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73600"
+          ],
+          "population": 959
+        },
+        {
+          "nom": "Séez",
+          "code": "73285",
+          "codeDepartement": "73",
+          "siren": "217302850",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73700"
+          ],
+          "population": 2460
+        },
+        {
+          "nom": "Serrières-en-Chautagne",
+          "code": "73286",
+          "codeDepartement": "73",
+          "siren": "217302868",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 1161
+        },
+        {
+          "nom": "Sonnaz",
+          "code": "73288",
+          "codeDepartement": "73",
+          "siren": "217302884",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73000"
+          ],
+          "population": 2106
+        },
+        {
+          "nom": "La Table",
+          "code": "73289",
+          "codeDepartement": "73",
+          "siren": "217302892",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 432
+        },
+        {
+          "nom": "Val-Cenis",
+          "code": "73290",
+          "codeDepartement": "73",
+          "siren": "200064061",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73480",
+            "73500"
+          ],
+          "population": 2092
+        },
+        {
+          "nom": "Thénésol",
+          "code": "73292",
+          "codeDepartement": "73",
+          "siren": "217302926",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 318
+        },
+        {
+          "nom": "Thoiry",
+          "code": "73293",
+          "codeDepartement": "73",
+          "siren": "217302934",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73230"
+          ],
+          "population": 454
+        },
+        {
+          "nom": "La Thuile",
+          "code": "73294",
+          "codeDepartement": "73",
+          "siren": "217302942",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73190"
+          ],
+          "population": 348
+        },
+        {
+          "nom": "Tignes",
+          "code": "73296",
+          "codeDepartement": "73",
+          "siren": "217302967",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73320"
+          ],
+          "population": 1953
+        },
+        {
+          "nom": "Tournon",
+          "code": "73297",
+          "codeDepartement": "73",
+          "siren": "217302975",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 577
+        },
+        {
+          "nom": "Tours-en-Savoie",
+          "code": "73298",
+          "codeDepartement": "73",
+          "siren": "217302983",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73790"
+          ],
+          "population": 905
+        },
+        {
+          "nom": "Traize",
+          "code": "73299",
+          "codeDepartement": "73",
+          "siren": "217302991",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 336
+        },
+        {
+          "nom": "Tresserve",
+          "code": "73300",
+          "codeDepartement": "73",
+          "siren": "217303007",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 2927
+        },
+        {
+          "nom": "Trévignin",
+          "code": "73301",
+          "codeDepartement": "73",
+          "siren": "217303015",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73100"
+          ],
+          "population": 861
+        },
+        {
+          "nom": "La Trinité",
+          "code": "73302",
+          "codeDepartement": "73",
+          "siren": "217303023",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 380
+        },
+        {
+          "nom": "Ugine",
+          "code": "73303",
+          "codeDepartement": "73",
+          "siren": "217303031",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73400"
+          ],
+          "population": 7162
+        },
+        {
+          "nom": "Val-d'Isère",
+          "code": "73304",
+          "codeDepartement": "73",
+          "siren": "217303049",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73150"
+          ],
+          "population": 1572
+        },
+        {
+          "nom": "Valloire",
+          "code": "73306",
+          "codeDepartement": "73",
+          "siren": "217303064",
+          "codeEpci": "247300452",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73450"
+          ],
+          "population": 1074
+        },
+        {
+          "nom": "Valmeinier",
+          "code": "73307",
+          "codeDepartement": "73",
+          "siren": "217303072",
+          "codeEpci": "247300452",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73450"
+          ],
+          "population": 578
+        },
+        {
+          "nom": "Venthon",
+          "code": "73308",
+          "codeDepartement": "73",
+          "siren": "217303080",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73200"
+          ],
+          "population": 607
+        },
+        {
+          "nom": "Verel-de-Montbel",
+          "code": "73309",
+          "codeDepartement": "73",
+          "siren": "217303098",
+          "codeEpci": "247300528",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73330"
+          ],
+          "population": 339
+        },
+        {
+          "nom": "Verel-Pragondran",
+          "code": "73310",
+          "codeDepartement": "73",
+          "siren": "217303106",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73230"
+          ],
+          "population": 586
+        },
+        {
+          "nom": "Le Verneil",
+          "code": "73311",
+          "codeDepartement": "73",
+          "siren": "217303114",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 89
+        },
+        {
+          "nom": "Verrens-Arvey",
+          "code": "73312",
+          "codeDepartement": "73",
+          "siren": "217303122",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73460"
+          ],
+          "population": 958
+        },
+        {
+          "nom": "Verthemex",
+          "code": "73313",
+          "codeDepartement": "73",
+          "siren": "217303130",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 240
+        },
+        {
+          "nom": "Villard-d'Héry",
+          "code": "73314",
+          "codeDepartement": "73",
+          "siren": "217303148",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73800"
+          ],
+          "population": 264
+        },
+        {
+          "nom": "Villard-Léger",
+          "code": "73315",
+          "codeDepartement": "73",
+          "siren": "217303155",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73390"
+          ],
+          "population": 436
+        },
+        {
+          "nom": "Villard-Sallet",
+          "code": "73316",
+          "codeDepartement": "73",
+          "siren": "217303163",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 297
+        },
+        {
+          "nom": "Villard-sur-Doron",
+          "code": "73317",
+          "codeDepartement": "73",
+          "siren": "217303171",
+          "codeEpci": "200068997",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73270"
+          ],
+          "population": 683
+        },
+        {
+          "nom": "Villarembert",
+          "code": "73318",
+          "codeDepartement": "73",
+          "siren": "217303189",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 245
+        },
+        {
+          "nom": "Villargondran",
+          "code": "73320",
+          "codeDepartement": "73",
+          "siren": "217303205",
+          "codeEpci": "200070464",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73300"
+          ],
+          "population": 804
+        },
+        {
+          "nom": "Villarodin-Bourget",
+          "code": "73322",
+          "codeDepartement": "73",
+          "siren": "217303221",
+          "codeEpci": "200070340",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73500"
+          ],
+          "population": 511
+        },
+        {
+          "nom": "Villaroger",
+          "code": "73323",
+          "codeDepartement": "73",
+          "siren": "217303239",
+          "codeEpci": "247300254",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73640"
+          ],
+          "population": 359
+        },
+        {
+          "nom": "Villaroux",
+          "code": "73324",
+          "codeDepartement": "73",
+          "siren": "217303247",
+          "codeEpci": "200041010",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73110"
+          ],
+          "population": 191
+        },
+        {
+          "nom": "Vimines",
+          "code": "73326",
+          "codeDepartement": "73",
+          "siren": "217303262",
+          "codeEpci": "200069110",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73160"
+          ],
+          "population": 2304
+        },
+        {
+          "nom": "Vions",
+          "code": "73327",
+          "codeDepartement": "73",
+          "siren": "217303270",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73310"
+          ],
+          "population": 426
+        },
+        {
+          "nom": "Viviers-du-Lac",
+          "code": "73328",
+          "codeDepartement": "73",
+          "siren": "217303288",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73420"
+          ],
+          "population": 2282
+        },
+        {
+          "nom": "Voglans",
+          "code": "73329",
+          "codeDepartement": "73",
+          "siren": "217303296",
+          "codeEpci": "200068674",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73420"
+          ],
+          "population": 1998
+        },
+        {
+          "nom": "Yenne",
+          "code": "73330",
+          "codeDepartement": "73",
+          "siren": "217303304",
+          "codeEpci": "247300262",
+          "codeRegion": "84",
+          "codesPostaux": [
+            "73170"
+          ],
+          "population": 3045
+        }
+      ]
+  }
