@@ -48,6 +48,64 @@ paths:
           description: Requête invalide
         '404':
           description: Données non trouvées
+          
+  /departements/73/communes/{code}:
+    get:
+      summary: Obtenir la population d'une commune
+      description: Retourne uniquement la population d'une commune donnée dans un département.
+      parameters:
+        - name: code
+          in: path
+          required: true
+          description: Code INSEE de la commune
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Population de la commune
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  population:
+                    type: integer
+                    example: 10000
+        '404':
+          description: Commune non trouvée
+          
+  /recherche/medecins:
+    get:
+      summary: Rechercher les médecins à proximité de coordonnées
+      description: Retourne une liste de médecins les plus proches des coordonnées GPS fournies.
+      parameters:
+        - name: lat
+          in: query
+          required: true
+          description: Latitude de la position de recherche
+          schema:
+            type: number
+            format: float
+            example: 45.769
+        - name: lon
+          in: query
+          required: true
+          description: Longitude de la position de recherche
+          schema:
+            type: number
+            format: float
+            example: 5.836
+      responses:
+        '200':
+          description: Liste des médecins proches
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Medecin'
+        '400':
+          description: Coordonnées invalides
 
 components:
   schemas:

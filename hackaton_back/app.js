@@ -1,11 +1,11 @@
-const cors = require('cors')
+const cors = require('cors');
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
 const app = express();
 const port = 5000;
 
-app.use(cors())
+app.use(cors());
 
 // Load Swagger doc
 const swaggerDocument = YAML.load('./openapi.yaml');
@@ -88,14 +88,16 @@ const medecins = [
   }
 ];
 
-
-// Root endpoint
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
+// ---- 1. Liste des communes du département 73
 app.get('/departements/73/communes', (req, res) => {
   res.status(200).json(communes);
 });
+
+// ---- 2. Liste des médecins du département 73, filtable par codePostal
 app.get('/departements/73/medecins', (req, res) => {
   const { codePostal } = req.query;
   if (codePostal) {
@@ -103,6 +105,25 @@ app.get('/departements/73/medecins', (req, res) => {
     return res.status(200).json(filtered);
   }
   res.status(200).json(medecins);
+});
+
+// ---- 3. Endpoint pour la population d'une commune par code INSEE
+app.get('/departements/73/communes/:code', (req, res) => {
+  const { code } = req.params;
+  const commune = communes.find(c => c.code === code);
+  if (!commune) return res.status(404).json({ message: "Commune non trouvée" });
+  res.json({ population: commune.population });
+});
+
+// ---- 4. Recherche des médecins proches des coordonnées (mock)
+app.get('/recherche/medecins', (req, res) => {
+  const { lat, lon } = req.query;
+  // contrôle de la présence et de la validité des coordonnées
+  if (!lat || !lon || isNaN(+lat) || isNaN(+lon)) {
+    return res.status(400).json({ message: "Coordonnées invalides" });
+  }
+  // Pour l'exemple, on retourne les 3 premiers médecins
+  res.json(medecins.slice(0, 3));
 });
 
 app.listen(port, () => {
