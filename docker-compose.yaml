@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_pwd
+      POSTGRES_DB: hackaton_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./hackaton_back
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres:postgres_pwd@db:5432/hackaton_db
+
+  frontend:
+    build:
+      context: ./hackaton_front
+    ports:
+      - "3000:80"
+volumes:
+  pgdata:
