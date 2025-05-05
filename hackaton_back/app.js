@@ -1,9 +1,11 @@
+require('dotenv').config();
 const cors = require('cors');
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
-const app = express();
 const port = 5000;
+const app = express();
+
 
 app.use(cors());
 
@@ -93,39 +95,83 @@ app.get('/', (req, res) => {
 });
 
 // ---- 1. Liste des communes du département 73
-app.get('/departements/73/communes', (req, res) => {
-  res.status(200).json(communes);
+app.get('/departements/73/communes', async (req, res) => {
+  let response;
+
+  if (process.env.BDJSON) 
+  {
+    response = await fetch('http://localhost:3001/communes');
+  } 
+  else 
+  {
+    const url = "https://geo.api.gouv.fr/departements/73/communes";
+    response = await fetch(url);
+  }
+
+  if (!response.ok) {
+    throw new Error(`Erreur HTTP ${response.status}`);
+  }
+
+  const data = await response.json();
+  return res.json(data)
 });
 
 // ---- 2. Liste des médecins du département 73, filtable par codePostal
-app.get('/departements/73/medecins', (req, res) => {
+app.get('/departements/73/medecins', async (req, res) => {
   const { codePostal } = req.query;
-  if (codePostal) {
-    const filtered = medecins.filter(m => m.adresse.includes(codePostal));
-    return res.status(200).json(filtered);
-  }
-  res.status(200).json(medecins);
+  const url = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records?where=dep_code%3D73%20AND%20adresse%20like%20%27" + codePostal + "%27&limit=100&refine=libelle_profession%3A%22M%C3%A9decin%20g%C3%A9n%C3%A9raliste%22";
+  
+  const response = await fetch(url);
+  const data = await response.json();
+
+  const medecinsReponse = data.results.map(medecin => ({
+    nom: medecin.nom,
+    adresse: medecin.adresse
+  }));
+
+  res.json(medecinsReponse);
 });
 
 // ---- 3. Endpoint pour la population d'une commune par code INSEE
-app.get('/departements/73/communes/:code', (req, res) => {
+app.get('/departements/73/communes/:code', async (req, res) => {
   const { code } = req.params;
-  const commune = communes.find(c => c.code === code);
-  if (!commune) return res.status(404).json({ message: "Commune non trouvée" });
-  res.json({ population: commune.population });
+  const url = "https://geo.api.gouv.fr/communes/" + code;
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error(`Erreur HTTP ${response.status}`);
+  }
+
+  const data = await response.json();
+  return res.json(data)
 });
 
 // ---- 4. Recherche des médecins proches des coordonnées (mock)
-app.get('/recherche/medecins', (req, res) => {
+app.get('/recherche/medecins', async (req, res) => {
   const { lat, lon } = req.query;
   // contrôle de la présence et de la validité des coordonnées
   if (!lat || !lon || isNaN(+lat) || isNaN(+lon)) {
     return res.status(400).json({ message: "Coordonnées invalides" });
   }
-  // Pour l'exemple, on retourne les 3 premiers médecins
-  res.json(medecins.slice(0, 3));
+
+  const url = "https://nominatim.openstreetmap.org/reverse?lat=" + lat + "&lon=" + lon + "&format=json";
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Erreur HTTP ${response.status}`);
+  }
+  const nearestPlace = await response.json();
+
+  const urlMedecin = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records?where=dep_code%3D73%20AND%20adresse%20like%20%27" + nearestPlace.address.postcode + "%27&limit=100&refine=libelle_profession%3A%22M%C3%A9decin%20g%C3%A9n%C3%A9raliste%22";
+  
+  const responseMedecin = await fetch(urlMedecin);
+  const data = await responseMedecin.json();
+
+  const medecins = data.results.map(medecin => ({
+    nom: medecin.nom,
+    adresse: medecin.adresse
+  }));
+
+  res.json(medecins);
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+module.exports = app;
