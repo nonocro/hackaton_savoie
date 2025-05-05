@@ -1,26 +1,26 @@
 # Use the official Node.js image as the base image
-FROM node:18-alpine
+FROM node:18 as build
 
-# Set the working directory
-WORKDIR /app
+# Create and change to the app directory
+WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json (or yarn.lock)
+# Copy the package.json and package-lock.json files
 COPY package*.json ./
 
-# Install the dependencies
+# Install dependencies
 RUN npm install
 
 # Copy the rest of the application code
 COPY . .
 
-# Build the Vite project
+# Build the React app, assuming your build script outputs to dist
 RUN npm run build
 
-# Install serve to serve static files
-RUN npm install -g serve
+# Use Nginx as the web server
+FROM nginx:alpine
 
-# Expose the port that the serve will run on
-EXPOSE 3000
+# Copy the build output to the Nginx directory
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
 
-# Command to run the serve
-CMD ["serve", "-s", "dist", "-l", "3000"]
+# Expose the port the app runs on
+EXPOSE 80
