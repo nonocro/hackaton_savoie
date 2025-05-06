@@ -21,13 +21,41 @@ app.get("/departements/73/communes", async (req, res) => {
   } else {
     /*const url = "https://geo.api.gouv.fr/departements/73/communes";
     response = await fetch(url); */
+
+    response = await fetch("http://localhost:3001/communes");
   }
 
   if (!response.ok) {
     throw new Error(`Erreur HTTP ${response.status}`);
   }
-
+  
   const data = await response.json();
+
+  const tourismesData = await fetch("http://localhost:3001/tourisme");
+  const tourismes = await tourismesData.json();
+  for (let i = 0; i < data.length; i++) {
+    const commune = data[i];
+    let type = tourismes.find((t) => {
+      return t.com_code_source == commune.code_insee
+    });
+    type = type ?? {com_tourism_type:""};
+    switch (type.com_tourism_type)
+    {
+      case "Commune touristique":
+        commune.populationHiver = commune.population;
+        commune.populationEte = commune.population * 10;
+        break;
+        case "Station classée de tourisme":
+        commune.populationHiver = commune.population * 10;
+        commune.populationEte = commune.population;
+        break;
+      default:
+        commune.populationHiver = commune.population;
+        commune.populationEte = commune.population;
+        break;
+    }
+  }
+
   return res.json(data);
 });
 

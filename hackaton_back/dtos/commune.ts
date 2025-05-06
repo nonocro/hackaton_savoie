@@ -7,4 +7,6 @@ export interface CommuneReponse {
   codeRegion: string;
   codesPostaux: string[];
   population: number;
+  populationHiver: number;
+  populationEte: number;
 }
