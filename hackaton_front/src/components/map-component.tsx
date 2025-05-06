@@ -62,11 +62,7 @@ function ChangeView({ center }: { center: LatLngLiteral }) {
   return null;
 }
 
-function DoctorsClusters({
-  nearbyDoctors,
-}: {
-  nearbyDoctors: Doctor[] | undefined;
-}) {
+function DoctorsClusters({ doctors }: { doctors: Doctor[] | undefined }) {
   const doctorIcon = L.icon({
     iconUrl: icon,
     shadowUrl: iconShadow,
@@ -78,7 +74,7 @@ function DoctorsClusters({
 
   return (
     <MarkerClusterGroup chunkedLoading scrollWheelZoom showCoverageOnHover>
-      {nearbyDoctors?.map((doctor, index) => (
+      {doctors?.map((doctor, index) => (
         <Marker
           key={`doctor-${index}`}
           position={{ lat: doctor.latitude, lng: doctor.longitude }}
@@ -123,7 +119,7 @@ export function MapComponent({ location }: Readonly<MapComponentProps>) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <DoctorsClusters nearbyDoctors={doctors} />
+      <DoctorsClusters doctors={doctors} />
     </MapContainer>
   );
 }
