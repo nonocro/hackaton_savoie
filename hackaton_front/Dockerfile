@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:18 as build
+FROM node:18
 
 # Create and change to the app directory
 WORKDIR /usr/src/app
@@ -16,11 +16,11 @@ COPY . .
 # Build the React app, assuming your build script outputs to dist
 RUN npm run build
 
-# Use Nginx as the web server
-FROM nginx:alpine
+# Install 'serve' to serve the static site
+RUN npm install -g serve
 
-# Copy the build output to the Nginx directory
-COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+# Expose the port 'serve' will use
+EXPOSE 3000
 
-# Expose the port the app runs on
-EXPOSE 80
+# Start the app using 'serve'
+CMD ["serve", "-s", "dist", "-l", "3000"]

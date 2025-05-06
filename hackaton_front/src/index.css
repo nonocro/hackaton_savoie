@@ -124,7 +124,29 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  .leaflet-pane {
+    @apply z-0!;
+  }
+}
+
+.cluster-icon {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.custom-marker-cluster {
+  background-color: transparent !important;
+  border: none !important;
 }
