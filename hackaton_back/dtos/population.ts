@@ -1,3 +1,3 @@
 export interface populationReponse {
-  population: number;
+	population: number;
 }

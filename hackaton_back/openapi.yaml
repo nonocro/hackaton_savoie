@@ -34,7 +34,7 @@ paths:
           description: Filtrer les médecins par code postal
           schema:
             type: string
-            example: "73125"
+            example: '73125'
       responses:
         '200':
           description: Liste des médecins
@@ -48,7 +48,7 @@ paths:
           description: Requête invalide
         '404':
           description: Données non trouvées
-          
+
   /departements/73/communes/{code}:
     get:
       summary: Obtenir la population d'une commune
@@ -73,7 +73,7 @@ paths:
                     example: 10000
         '404':
           description: Commune non trouvée
-          
+
   /recherche/medecins:
     get:
       summary: Rechercher les médecins à proximité de coordonnées
@@ -154,24 +154,24 @@ components:
           example: Aiguebelette-le-Lac
         code:
           type: string
-          example: "73001"
+          example: '73001'
         codeDepartement:
           type: string
-          example: "73"
+          example: '73'
         siren:
           type: string
-          example: "217300011"
+          example: '217300011'
         codeEpci:
           type: string
-          example: "247300668"
+          example: '247300668'
         codeRegion:
           type: string
-          example: "84"
+          example: '84'
         codesPostaux:
           type: array
           items:
             type: string
-          example: ["73610"]
+          example: ['73610']
         population:
           type: integer
           example: 247
