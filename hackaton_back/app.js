@@ -12,87 +12,6 @@ app.use(cors());
 const swaggerDocument = YAML.load("./openapi.yaml");
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-// Dummy data
-const communes = [
-  {
-    nom: "Aiguebelette-le-Lac",
-    code: "73001",
-    codeDepartement: "73",
-    siren: "217300011",
-    codeEpci: "247300668",
-    codeRegion: "84",
-    codesPostaux: ["73610"],
-    population: 247,
-  },
-  {
-    nom: "Chambéry",
-    code: "73065",
-    codeDepartement: "73",
-    siren: "217300065",
-    codeEpci: "247300489",
-    codeRegion: "84",
-    codesPostaux: ["73000", "73011", "73012"],
-    population: 58839,
-  },
-  {
-    nom: "Aix-les-Bains",
-    code: "73008",
-    codeDepartement: "73",
-    siren: "217300008",
-    codeEpci: "247300522",
-    codeRegion: "84",
-    codesPostaux: ["73100"],
-    population: 30790,
-  },
-  {
-    nom: "Albertville",
-    code: "73011",
-    codeDepartement: "73",
-    siren: "217300011",
-    codeEpci: "247300546",
-    codeRegion: "84",
-    codesPostaux: ["73200"],
-    population: 19133,
-  },
-  {
-    nom: "Saint-Jean-de-Maurienne",
-    code: "73248",
-    codeDepartement: "73",
-    siren: "217302048",
-    codeEpci: "247300490",
-    codeRegion: "84",
-    codesPostaux: ["73300"],
-    population: 7915,
-  },
-];
-
-const medecins = [
-  {
-    nom: "Dr Jean Dupont",
-    adresse: "13 rue du grand BAC 73125 Chambéry",
-  },
-  {
-    nom: "Dr Claire Martin",
-    adresse: "20 avenue de la Gare 73200 Albertville",
-  },
-  {
-    nom: "Dr Pierre Morel",
-    adresse: "5 rue de Genève 73100 Aix-les-Bains",
-  },
-  {
-    nom: "Dr Sophie Lacroix",
-    adresse: "42 boulevard de la Colonne 73000 Chambéry",
-  },
-  {
-    nom: "Dr Paul Simon",
-    adresse: "8 chemin des Écoles 73300 Saint-Jean-de-Maurienne",
-  },
-];
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
 // ---- 1. Liste des communes du département 73
 app.get("/departements/73/communes", async (req, res) => {
   let response;
@@ -112,36 +31,89 @@ app.get("/departements/73/communes", async (req, res) => {
   return res.json(data);
 });
 
-// ---- 2. Liste des médecins du département 73
-app.get("/departements/73/medecins", async (req, res) => {
-  const url =
-    "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records?where=dep_code%3D73&limit=100&refine=libelle_profession%3A%22M%C3%A9decin%20g%C3%A9n%C3%A9raliste%22";
+// ---- 2. Liste des médecins du département 73, filtable par codePostal
+app.get('/departements/73/medecins', async (req, res) => {
+  const { codePostal } = req.query;
 
-  const response = await fetch(url);
-  const data = await response.json();
+  if (!process.env.BDJSON) 
+  {
+    const url = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records?where=dep_code%3D73%20AND%20adresse%20like%20%27" + codePostal + "%27&limit=100&refine=libelle_profession%3A%22M%C3%A9decin%20g%C3%A9n%C3%A9raliste%22";
 
-  const medecinsReponse = data.results.map((medecin) => ({
-    nom: medecin.nom,
-    adresse: medecin.adresse,
-    longitude: medecin.coordonnees.lon,
-    latitude: medecin.coordonnees.lat,
-  }));
+    const response = await fetch(url);
+    const data = await response.json();
 
-  res.json(medecinsReponse);
+    res.json(data);
+  }
+  else 
+  {
+    const response = await fetch("http://localhost:3001/medecins");
+    const data = await response.json();
+  
+    // Si le code postal est vide on renvoit toutes les données
+    if(codePostal == "" || codePostal == undefined || codePostal == null)
+    {
+      const medecinsReponse = data.map(medecin => 
+      ({
+          nom: medecin.nom,
+          adresse: medecin.adresse
+        })
+      );
+
+      return res.json(medecinsReponse);
+    }
+
+    const medecinsReponse = [];
+    const regex = new RegExp(`\\b${codePostal}\\b`);
+
+    for (let i = 0; i < data.length; i++) {
+      const medecin = data[i];
+      
+      if (regex.test(medecin.adresse)) {
+        medecinsReponse.push({
+          nom: medecin.nom,
+          adresse: medecin.adresse
+        });
+      }
+    }
+      
+    return res.json(medecinsReponse);
+  }
 });
 
 // ---- 3. Endpoint pour la population d'une commune par code INSEE
-app.get("/departements/73/communes/:code", async (req, res) => {
-  const { code } = req.params;
-  const url = "https://geo.api.gouv.fr/communes/" + code;
-  const response = await fetch(url);
+app.get('/departements/73/communes/:code', async (req, res) => {
 
-  if (!response.ok) {
-    throw new Error(`Erreur HTTP ${response.status}`);
+  if (process.env.BDJSON) 
+  {
+    const { code } = req.params;
+    const response = await fetch('http://localhost:3001/communes');
+    const data = await response.json();
+
+    const communesReponse = [];
+    const regex = new RegExp(`\\b${code}\\b`);
+
+    for (let i = 0; i < data.length; i++) {
+      const commune = data[i];
+      if (regex.test(commune.code)) {
+        communesReponse.push(commune);
+      }
+    }
+      
+    return res.json(communesReponse);
   }
-
-  const data = await response.json();
-  return res.json(data);
+  else 
+  {
+    const { code } = req.params;
+    const url = "https://geo.api.gouv.fr/communes/" + code;
+    const response = await fetch(url);
+  
+    if (!response.ok) {
+      throw new Error(`Erreur HTTP ${response.status}`);
+    }
+  
+    const data = await response.json();
+    return res.json(data)
+  }
 });
 
 // ---- 4. Recherche des médecins proches des coordonnées (mock)
