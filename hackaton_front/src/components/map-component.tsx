@@ -31,6 +31,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 interface MapComponentProps {
   location?: LocationInfo;
   isochroneTime?: number; // in seconds
+  saisonTime: string
   center?: LatLngLiteral;
 }
 
@@ -54,6 +55,8 @@ interface Commune {
   dep_code: string;
   dep_nom: string;
   population: number;
+  populationEte: number;
+  populationHiver: number;
   latitude_centre: number;
   longitude_centre: number;
   polygone: [number, number][];
@@ -126,9 +129,11 @@ function DoctorsClusters({ doctors }: { doctors: Doctor[] | undefined }) {
 function CommunePolygons({
   communes,
   doctors,
+  saison
 }: {
   communes: Commune[] | undefined;
   doctors: Doctor[] | undefined;
+  saison: string
 }) {
   const interpolateColor = (
     color1: [number, number, number],
@@ -168,11 +173,26 @@ function CommunePolygons({
     communes.forEach((commune) => {
       const doctorCount = doctorCounts[commune.code_insee] || 0;
 
+      switch (saison)
+      {
+        case "ETE":
+          commune.population = commune.populationEte;
+          break;
+        case "HIVER":
+          commune.population = commune.populationHiver;
+          break;
+        default:
+          break;
+      }
+
       if (commune.population <= 0) {
         colors[commune.code_insee] = "rgba(100, 100, 100, 0.5)";
       } else if (doctorCount === 0) {
         colors[commune.code_insee] = "rgba(180, 0, 0, 0.6)";
       } else {
+        // REMY
+        console.log("saison : " + saison)
+          
         const ratio = (doctorCount / commune.population) * 1000;
         let normalizedRatio;
 
@@ -206,7 +226,7 @@ function CommunePolygons({
     });
 
     return colors;
-  }, [communes, doctors]);
+  }, [communes, doctors, saison]);
 
   const legend = useMemo(() => {
     const gradientStyle = {
@@ -425,7 +445,7 @@ function MapClickHandler({
   return null;
 }
 
-export function MapComponent({ location, isochroneTime }: Readonly<MapComponentProps>) {
+export function MapComponent({ location, isochroneTime, saisonTime }: Readonly<MapComponentProps>) {
   const [center, setCenter] = useState(DEFAULT_CENTER);
   const [isochrone, setIsochrone] = useState<number[][] | null>(null);
 
@@ -478,7 +498,7 @@ export function MapComponent({ location, isochroneTime }: Readonly<MapComponentP
         isochroneTime={isochroneTime ?? 300} // fallback to 5 min if undefined
       />
 
-      <CommunePolygons communes={communes} doctors={doctors} />
+      <CommunePolygons communes={communes} doctors={doctors} saison={saisonTime} />
       <DoctorsClusters doctors={doctors} />
 
       {isochrone && (

@@ -39,6 +39,7 @@ export default function MapPage() {
   const [showStatistics, setShowStatistics] = useState(true);
   const [location, setLocation] = useState<LocationInfo>();
   const [isochroneTime, setIsochroneTime] = useState(DEFAULT_TIME_SECONDS);
+  const [saison, setSaisonTime] = useState("");
 
   const handleLocationChange = (location: LocationInfo | undefined) => {
     setLocation(location);
@@ -103,7 +104,7 @@ export default function MapPage() {
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <MapComponent location={location} isochroneTime={isochroneTime}/>
+        <MapComponent location={location} isochroneTime={isochroneTime} saisonTime={saison}/>
 
         <div className="w-1/5 border-l bg-white overflow-auto">
           <div className="p-4">
@@ -158,6 +159,20 @@ export default function MapPage() {
                     <option value={1200}>20 min</option>
                     <option value={1800}>30 min</option>
                     <option value={2700}>45 min</option>
+                  </select>
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  Saison :
+                  <select
+                    value={saison}
+                    onChange={(e) => setSaisonTime(e.target.value)}
+                  >
+                    <option value="">Aucun</option>
+                    <option value="ETE">Ete</option>
+                    <option value="HIVER">Hiver</option>
                   </select>
                 </label>
               </div>
