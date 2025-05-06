@@ -4,9 +4,9 @@ services:
   db:
     image: postgres:latest
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres_pwd
-      POSTGRES_DB: hackaton_db
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - "5432:5432"
     volumes:
@@ -20,12 +20,13 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://postgres:postgres_pwd@db:5432/hackaton_db
+      DATABASE_URL: ${DATABASE_URL}
 
   frontend:
     build:
       context: ./hackaton_front
     ports:
       - "3000:3000"
+
 volumes:
   pgdata:
