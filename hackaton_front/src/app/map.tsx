@@ -32,11 +32,14 @@ import {
 import { MapComponent } from "@/components/map-component";
 import { StatisticsPanel } from "@/components/statistics-panel";
 import { AddressInput, type LocationInfo } from "@/components/adress-input";
+const DEFAULT_TIME_SECONDS = 300;
 
 export default function MapPage() {
+  
   const [visualizationMode, setVisualizationMode] = useState("density");
   const [showStatistics, setShowStatistics] = useState(true);
   const [location, setLocation] = useState<LocationInfo>();
+  const [isochroneTime, setIsochroneTime] = useState(DEFAULT_TIME_SECONDS);
 
   const handleLocationChange = (location: LocationInfo | undefined) => {
     setLocation(location);
@@ -101,7 +104,7 @@ export default function MapPage() {
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <MapComponent location={location} />
+        <MapComponent location={location} isochroneTime={isochroneTime}/>
 
         <div className="w-1/5 border-l bg-white overflow-auto">
           <div className="p-4">
@@ -141,6 +144,23 @@ export default function MapPage() {
                     </SelectGroup>
                   </SelectContent>
                 </Select>
+              </div>
+
+              <div>
+                <label>
+                  Temps de trajet (minutes) :
+                  <select
+                    value={isochroneTime}
+                    onChange={(e) => setIsochroneTime(Number(e.target.value))}
+                  >
+                    <option value={300}>5 min</option>
+                    <option value={600}>10 min</option>
+                    <option value={900}>15 min</option>
+                    <option value={1200}>20 min</option>
+                    <option value={1800}>30 min</option>
+                    <option value={2700}>45 min</option>
+                  </select>
+                </label>
               </div>
 
               <div className="space-y-2">
