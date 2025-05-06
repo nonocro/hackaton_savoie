@@ -75,4 +75,48 @@ describe('API Express Tests', () => {
     expect(Array.isArray(res.body)).toBe(true);
     expect(res.body[0].nom).toBe("Jacob");
   });
+
+  test('GET /departements/73/nombre-habitant-par-medecin/73065 retourne un ratio (mock externe)', async () => {
+    nock(base_url_communes)
+      .get('/communes')
+      .reply(200, [{
+        code: "73001",
+        population: 10000,
+        codesPostaux: ['73250']
+      }]);
+
+    nock(base_url_medecins).get('/medecins').query(true).reply(200, [
+      { nom: 'Jacob', address: 'une super adresse 73011', code_insee: "73001" },
+      { nom: 'Jacob le frère', address: 'une super adresse 73012', code_insee: "73001" }
+    ]);
+  
+    nock('https://public.opendatasoft.com')
+      .get('/api/explore/v2.1/catalog/datasets/medecins/records')
+      .query(true)
+      .reply(200, {
+        results: [
+          { nom: "Dr A" },
+          { nom: "Dr B" }
+        ]
+      });
+  
+    const res = await request(app).get('/departements/73/nombre-habitant-par-medecin/?code=73001');
+    expect(res.statusCode).toBe(200);
+    expect(res.body.population).toBe(10000);
+    expect(res.body.medecinsCount).toBe(2);
+    expect(res.body.nbHabByMed).toBe(5000);
+  });
+
+  test('GET /departements/73/nombre-habitant-par-medecin/73001 retourne 404 commune not found', async () => {
+    nock(base_url_communes)
+      .get('/communes')
+      .reply(200, [{
+        code: "73002",
+        population: 10000,
+        codesPostaux: ['73250']
+      }]);
+  
+    const res = await request(app).get('/departements/73/nombre-habitant-par-medecin/?code=73001');
+    expect(res.statusCode).toBe(404);
+  });
 });
