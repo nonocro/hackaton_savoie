@@ -1,30 +1,15 @@
 import { useState } from 'react';
 
-import { ArrowLeft, BarChart3, Download, Filter, MapPin, Settings, Share2 } from 'lucide-react';
+import { ArrowLeft, Download, MapPin, Settings, Share2 } from 'lucide-react';
 
 import { AddressInput, type LocationInfo } from '@/components/adress-input';
 import { MapComponent } from '@/components/map-component';
-import { StatisticsPanel } from '@/components/statistics-panel';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import {
-	Select,
-	SelectContent,
-	SelectGroup,
-	SelectItem,
-	SelectLabel,
-	SelectTrigger,
-	SelectValue,
-} from '@/components/ui/select';
-import { Slider } from '@/components/ui/slider';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const DEFAULT_TIME_SECONDS = 300;
 
 export default function MapPage() {
-	const [visualizationMode, setVisualizationMode] = useState('density');
-	const [showStatistics, setShowStatistics] = useState(true);
 	const [location, setLocation] = useState<LocationInfo>();
 	const [isochroneTime, setIsochroneTime] = useState(DEFAULT_TIME_SECONDS);
 	const [saison, setSaisonTime] = useState('');
@@ -99,26 +84,6 @@ export default function MapPage() {
 						<h2 className="mb-4 text-lg font-bold">Paramètres de visualisation</h2>
 
 						<div className="space-y-6">
-							{/* Mode de visualisation */}
-							<div className="space-y-2">
-								<label className="text-sm font-medium">Mode de visualisation</label>
-								<Select value={visualizationMode} onValueChange={setVisualizationMode}>
-									<SelectTrigger>
-										<SelectValue placeholder="Sélectionner un mode" />
-									</SelectTrigger>
-									<SelectContent>
-										<SelectGroup>
-											<SelectLabel>Modes de visualisation</SelectLabel>
-											<SelectItem value="density">Densité de médecins</SelectItem>
-											<SelectItem value="ratio">Ratio médecins/habitants</SelectItem>
-											<SelectItem value="impact">Zones d'impact</SelectItem>
-											<SelectItem value="priority">Zones prioritaires</SelectItem>
-											<SelectItem value="demographic">Données démographiques</SelectItem>
-										</SelectGroup>
-									</SelectContent>
-								</Select>
-							</div>
-
 							<div>
 								<label>
 									Temps de trajet (minutes) :
@@ -142,73 +107,6 @@ export default function MapPage() {
 										<option value="HIVER">Hiver</option>
 									</select>
 								</label>
-							</div>
-
-							<div className="space-y-2">
-								<div className="flex items-center justify-between">
-									<label className="text-sm font-medium">Filtres</label>
-									<Button variant="ghost" size="sm">
-										<Filter className="mr-1 h-4 w-4" />
-										Réinitialiser
-									</Button>
-								</div>
-
-								<Card>
-									<CardContent className="space-y-4 p-3">
-										<div className="space-y-2">
-											<label className="text-xs font-medium">Âge minimum des médecins</label>
-											<div className="flex items-center gap-2">
-												<Slider defaultValue={[30]} max={70} step={1} />
-												<span className="w-6 text-xs">30</span>
-											</div>
-										</div>
-
-										<div className="space-y-2">
-											<label className="text-xs font-medium">Distance maximale (km)</label>
-											<div className="flex items-center gap-2">
-												<Slider defaultValue={[10]} max={50} step={1} />
-												<span className="w-6 text-xs">10</span>
-											</div>
-										</div>
-
-										<div className="space-y-2">
-											<label className="text-xs font-medium">Population minimale</label>
-											<div className="flex items-center gap-2">
-												<Slider defaultValue={[5000]} min={1000} max={50000} step={1000} />
-												<span className="w-12 text-xs">5000</span>
-											</div>
-										</div>
-									</CardContent>
-								</Card>
-							</div>
-
-							<div className="space-y-2">
-								<div className="flex items-center justify-between">
-									<label className="text-sm font-medium">Statistiques</label>
-									<Button variant="ghost" size="sm" onClick={() => setShowStatistics(!showStatistics)}>
-										<BarChart3 className="mr-1 h-4 w-4" />
-										{showStatistics ? 'Masquer' : 'Afficher'}
-									</Button>
-								</div>
-
-								{showStatistics && (
-									<Tabs defaultValue="summary">
-										<TabsList className="grid w-full grid-cols-3">
-											<TabsTrigger value="summary">Résumé</TabsTrigger>
-											<TabsTrigger value="demographics">Démographie</TabsTrigger>
-											<TabsTrigger value="medical">Médical</TabsTrigger>
-										</TabsList>
-										<TabsContent value="summary">
-											<StatisticsPanel type="summary" />
-										</TabsContent>
-										<TabsContent value="demographics">
-											<StatisticsPanel type="demographics" />
-										</TabsContent>
-										<TabsContent value="medical">
-											<StatisticsPanel type="medical" />
-										</TabsContent>
-									</Tabs>
-								)}
 							</div>
 						</div>
 					</div>

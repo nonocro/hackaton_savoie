@@ -10,20 +10,6 @@ export default function HomePage() {
 					<MapPin className="h-6 w-6 text-teal-600" />
 					<span className="ml-2 text-xl font-bold">MédicoMap</span>
 				</a>
-				<nav className="ml-auto flex gap-4 sm:gap-6">
-					<a className="text-sm font-medium underline-offset-4 hover:underline" href="#">
-						Fonctionnalités
-					</a>
-					<a className="text-sm font-medium underline-offset-4 hover:underline" href="#">
-						Comment ça marche
-					</a>
-					<a className="text-sm font-medium underline-offset-4 hover:underline" href="#">
-						À propos
-					</a>
-					<a className="text-sm font-medium underline-offset-4 hover:underline" href="#">
-						Contact
-					</a>
-				</nav>
 			</header>
 			<main className="flex-1">
 				<section className="w-full bg-gradient-to-b from-white to-teal-50 py-12 md:py-24 lg:py-32">
@@ -66,20 +52,6 @@ export default function HomePage() {
 										<div className="absolute top-4 right-4 left-4 flex items-center rounded-lg bg-white p-3 shadow-lg">
 											<Search className="mr-2 h-4 w-4 text-gray-500" />
 											<span className="text-sm text-gray-400">Rechercher une zone géographique...</span>
-										</div>
-										<div className="absolute right-4 bottom-4 rounded-lg bg-white p-3 shadow-lg">
-											<div className="flex items-center gap-2 text-sm font-medium">
-												<div className="h-3 w-3 rounded-full bg-red-500" />
-												<span>Zone prioritaire</span>
-											</div>
-											<div className="flex items-center gap-2 text-sm font-medium">
-												<div className="h-3 w-3 rounded-full bg-yellow-500" />
-												<span>Zone intermédiaire</span>
-											</div>
-											<div className="flex items-center gap-2 text-sm font-medium">
-												<div className="h-3 w-3 rounded-full bg-green-500" />
-												<span>Zone bien couverte</span>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -177,39 +149,6 @@ export default function HomePage() {
 									</div>
 								</div>
 							</div>
-							<div className="mx-auto w-full max-w-[500px] lg:max-w-none">
-								<div className="aspect-square overflow-hidden rounded-xl border bg-white shadow-xl">
-									<div className="flex h-full items-center justify-center bg-gray-50">
-										<div className="relative h-full w-full">
-											<div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=600')] bg-cover bg-center" />
-											<div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-blue-500/10" />
-											<div className="absolute inset-0 flex flex-col items-center justify-center p-6">
-												<div className="max-w-md rounded-xl bg-white/90 p-6 shadow-lg backdrop-blur-sm">
-													<h3 className="mb-2 text-xl font-bold">Analyse de zone</h3>
-													<div className="space-y-2">
-														<div className="flex justify-between">
-															<span className="text-gray-500">Population</span>
-															<span className="font-medium">24,567 habitants</span>
-														</div>
-														<div className="flex justify-between">
-															<span className="text-gray-500">Médecins généralistes</span>
-															<span className="font-medium">8 praticiens</span>
-														</div>
-														<div className="flex justify-between">
-															<span className="text-gray-500">Ratio médecin/habitants</span>
-															<span className="font-medium text-red-500">1:3,071</span>
-														</div>
-														<div className="flex justify-between">
-															<span className="text-gray-500">Indice de priorité</span>
-															<span className="font-medium">Élevé</span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</section>
@@ -235,17 +174,6 @@ export default function HomePage() {
 			</main>
 			<footer className="flex w-full flex-col gap-2 border-t px-4 py-6 sm:flex-row md:px-6">
 				<p className="text-xs text-gray-500">© 2023 MédicoMap. Tous droits réservés.</p>
-				<nav className="flex gap-4 sm:ml-auto sm:gap-6">
-					<a className="text-xs underline-offset-4 hover:underline" href="#">
-						Mentions légales
-					</a>
-					<a className="text-xs underline-offset-4 hover:underline" href="#">
-						Politique de confidentialité
-					</a>
-					<a className="text-xs underline-offset-4 hover:underline" href="#">
-						Conditions d'utilisation
-					</a>
-				</nav>
 			</footer>
 		</div>
 	);
