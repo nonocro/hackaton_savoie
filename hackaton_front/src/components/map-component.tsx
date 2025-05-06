@@ -30,6 +30,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 
 interface MapComponentProps {
   location?: LocationInfo;
+  isochroneTime?: number; // in seconds
   center?: LatLngLiteral;
 }
 
@@ -335,8 +336,98 @@ function CommunePolygons({
   );
 }
 
-export function MapComponent({ location }: Readonly<MapComponentProps>) {
+type IsochroneParams = {
+  lon: number;
+  lat: number;
+  isochroneTime?: number; // in seconds
+};
+
+type GeoJSONPolygon = {
+  type: string;
+  coordinates: number[][][];
+};
+
+type IsochroneResponse = {
+  geometry: GeoJSONPolygon;
+};
+
+export async function fetchIsochrone({ lon, lat, isochroneTime }: IsochroneParams): Promise<number[][] | null> {
+  console.log("Fetching isochrone for:", lon, lat, isochroneTime);
+  const apiUrl = "https://data.geopf.fr/navigation/isochrone";
+  const body = {
+    resource: "bdtopo-valhalla",
+    profile: "car",
+    costType: "time",
+    costValue: String(isochroneTime),
+    direction: "departure",
+    point: `${lon},${lat}`,
+    geometryFormat: "geojson",
+    crs: "EPSG:4326",
+  };
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("[Isochrone error]", response.status, errorText);
+      return null;
+    }
+
+    const data: IsochroneResponse = await response.json();
+
+    if (
+      data?.geometry?.type === "Polygon" &&
+      Array.isArray(data.geometry.coordinates) &&
+      data.geometry.coordinates[0]
+    ) {
+      // Return the first (outer) ring coordinates – [ [lng, lat], ... ]
+      return data.geometry.coordinates[0];
+    } else {
+      console.error("Isochrone response missing coordinates:", data);
+      return null;
+    }
+  } catch (error) {
+    console.error("Error fetching isochrone:", error);
+    return null;
+  }
+}
+
+
+
+// --- Map click handler which calls fetchIsochrone and updates state ---
+function MapClickHandler({
+  onIsochrone,
+  isochroneTime,
+}: {
+  onIsochrone: (coords: number[][] | null, center: LatLngLiteral) => void;
+  isochroneTime: number;
+}) {
+  const map = useMap();
+  useEffect(() => {
+    const handleClick = (e: any) => {
+      map.closePopup();
+
+      const { lat, lng } = e.latlng;
+      fetchIsochrone({ lon: lng, lat, isochroneTime })
+        .then((coords) => onIsochrone(coords, { lat, lng }))
+        .catch(() => onIsochrone(null, { lat, lng }));
+    };
+    map.on("dblclick", handleClick);
+    return () => {
+      map.off("dblclick", handleClick);
+    };
+  }, [map, onIsochrone, isochroneTime]);
+  return null;
+}
+
+export function MapComponent({ location, isochroneTime }: Readonly<MapComponentProps>) {
   const [center, setCenter] = useState(DEFAULT_CENTER);
+  const [isochrone, setIsochrone] = useState<number[][] | null>(null);
 
   const { data: doctors } = useQuery({
     queryKey: ["doctors"],
@@ -354,7 +445,18 @@ export function MapComponent({ location }: Readonly<MapComponentProps>) {
         ? { lat: location.latitude, lng: location.longitude }
         : DEFAULT_CENTER
     );
-  }, [location]);
+    if (location?.longitude && location?.latitude) {
+      fetchIsochrone({
+        lon: location.longitude,
+        lat: location.latitude,
+        isochroneTime: isochroneTime
+      })
+        .then(coords => setIsochrone(coords))
+        .catch(() => setIsochrone(null));
+    } else {
+      setIsochrone(null);
+    }
+  }, [location, isochroneTime]);
 
   return (
     <MapContainer
@@ -367,8 +469,24 @@ export function MapComponent({ location }: Readonly<MapComponentProps>) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      {/* Enable click handler for isochrone on map click */}
+      <MapClickHandler
+        onIsochrone={(coords, newCenter) => {
+          setIsochrone(coords);
+          setCenter(newCenter);
+        }}
+        isochroneTime={isochroneTime ?? 300} // fallback to 5 min if undefined
+      />
+
       <CommunePolygons communes={communes} doctors={doctors} />
       <DoctorsClusters doctors={doctors} />
+
+      {isochrone && (
+        <Polygon
+          positions={isochrone.map(([lng, lat]) => [lat, lng])}
+          pathOptions={{ color: "blue", fillOpacity: 0.2, weight: 2 }}
+        />
+      )}
     </MapContainer>
   );
 }
