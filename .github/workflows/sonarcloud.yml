@@ -22,7 +22,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: cd hackaton_back && npm ci
+        run: cd hackathon_back && npm ci
 
       - name: Run tests
-        run: cd hackaton_back && npm test
+        run: cd hackathon_back && npm test

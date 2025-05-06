@@ -2,7 +2,7 @@
 <coverage generated="1746523061131" clover="3.2.0">
   <project timestamp="1746523061131" name="All files">
     <metrics statements="119" coveredstatements="61" conditionals="51" coveredconditionals="21" methods="12" coveredmethods="7" elements="182" coveredelements="89" complexity="0" loc="119" ncloc="119" packages="1" files="1" classes="1"/>
-    <file name="app.js" path="C:\Users\mrtre\Documents\ESGI\Hackathon\hackaton_savoie\hackaton_back\app.js">
+    <file name="app.js" path="C:\Users\mrtre\Documents\ESGI\Hackathon\hackathon_savoie\hackathon_back\app.js">
       <metrics statements="119" coveredstatements="61" conditionals="51" coveredconditionals="21" methods="12" coveredmethods="7"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>

@@ -27,7 +27,7 @@ exec('lsof -i :3000', (err, stdout) => {
     
     // Check npm dependencies
     console.log('\n--- CHECKING DEPENDENCIES ---');
-    const packageJsonPath = path.join(__dirname, 'hackaton_front', 'package.json');
+    const packageJsonPath = path.join(__dirname, 'hackathon_front', 'package.json');
     try {
       const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
       console.log('Found dependencies:');
@@ -45,7 +45,7 @@ exec('lsof -i :3000', (err, stdout) => {
       
       // Suggest next steps
       console.log('\n--- SUGGESTIONS ---');
-      console.log('1. Run the development server separately: cd hackaton_front && npm run dev');
+      console.log('1. Run the development server separately: cd hackathon_front && npm run dev');
       console.log('2. In another terminal, run: npx playwright test tests/debug.spec.ts --headed');
       console.log('3. Check test-results directory for screenshots and traces');
       console.log('4. Increase timeouts in playwright.config.ts if needed');
