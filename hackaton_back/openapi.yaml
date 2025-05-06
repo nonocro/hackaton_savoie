@@ -106,30 +106,43 @@ paths:
                   $ref: '#/components/schemas/Medecin'
         '400':
           description: Coordonnées invalides
-  /departements/73/nombre-habitant-par-medecin/{code}:
+  /departements/73/nombre-habitant-par-medecin:
     get:
-      summary: Nombre d'habitant par médecin par code Insee dans le département 73
+      summary: >
+        Nombre d'habitants par médecin généraliste dans le département 73,
+        pour une commune donnée (via son code INSEE) ou pour tout le département si aucun code n'est fourni.
       parameters:
         - name: code
-          in: path
-          required: true
-          description: Code INSEE de la commune
+          in: query
+          required: false
+          description: Code INSEE de la commune (optionnel, pour avoir le taux global du 73 ne pas fournir ce paramètre)
           schema:
             type: string
       responses:
         '200':
-          description: Taux de médecins par habitant
+          description: Nombre d’habitants par médecin et informations associées
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  nombreMedecins:
+                  codeCommune:
+                    type: string
+                  population:
                     type: integer
-                  populationTotale:
+                  medecinsCount:
                     type: integer
-                  tauxMedecinsParHabitant:
+                  nbHabByMed:
                     type: number
+        '404':
+          description: Commune non trouvée
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
 
 components:
   schemas:
