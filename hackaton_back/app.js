@@ -19,8 +19,8 @@ app.get("/departements/73/communes", async (req, res) => {
   if (process.env.BDJSON) {
     response = await fetch("http://localhost:3001/communes");
   } else {
-    const url = "https://geo.api.gouv.fr/departements/73/communes";
-    response = await fetch(url);
+    /*const url = "https://geo.api.gouv.fr/departements/73/communes";
+    response = await fetch(url); */
   }
 
   if (!response.ok) {
@@ -58,7 +58,7 @@ app.get('/departements/73/medecins', async (req, res) => {
           adresse: medecin.adresse,
           longitude: medecin.coordonnees.lon,
           latitude: medecin.coordonnees.lat,
-
+          code_insee: medecin.code_insee,
         })
       );
 
@@ -77,6 +77,7 @@ app.get('/departements/73/medecins', async (req, res) => {
           adresse: medecin.adresse,
           longitude: medecin.coordonnees.lon,
           latitude: medecin.coordonnees.lat,
+          code_insee: medecin.code_insee,
         });
       }
     }
@@ -154,6 +155,7 @@ app.get("/recherche/medecins", async (req, res) => {
     adresse: medecin.adresse,
     longitude: medecin.coordonnees.lon,
     latitude: medecin.coordonnees.lat,
+    code_insee: medecin.code_insee,
   }));
 
   res.json(medecins);
