@@ -159,4 +159,60 @@ app.get("/recherche/medecins", async (req, res) => {
   res.json(medecins);
 });
 
+// ---- 5. Taux de médecins par habitant dans le département 73
+app.get("/departements/73/nombre-habitant-par-medecin/:code", async (req, res) => {
+  const { code } = req.params;
+  let postalCode = "";
+  let population = 0;
+  let medecinsCount = 0;
+
+  // 1. Récupérer la population de la commune
+  if (process.env.BDJSON) {
+    // Mode mock
+    const response = await fetch("http://localhost:3001/communes");
+    const communes = await response.json();
+    const commune = communes.find((c) => c.code === code);
+    if (!commune) return res.status(404).json({ error: "Commune non trouvée" });
+    population = commune.population;
+    postalCode = commune.codesPostaux[0];
+  } else {
+    // Mode réel
+    const urlCommune = `https://geo.api.gouv.fr/communes/${code}`;
+    const response = await fetch(urlCommune);
+    if (!response.ok) return res.status(404).json({ error: "Commune non trouvée" });
+    const data = await response.json();
+    population = data.population;
+    postalCode = data.codesPostaux[0];
+  }
+
+  // 2. Récupérer les médecins de la commune
+  if (process.env.BDJSON) {
+    // Mode mock
+    const response = await fetch("http://localhost:3001/medecins");
+    const medecins = await response.json();
+    // Chercher ceux qui ont le bon code commune (à adapter selon structure exacte de tes données mock)
+    medecinsCount = medecins.filter((m) => m.code_insee === code).length;
+  } else {
+    // Mode réel
+    // Attention : Il faut filtrer sur le code INSEE, pas juste le code postal. Ici on filtre via "code_insee", à adapter selon l'API médicale
+    const urlMedecin = `https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records?where=dep_code%3D73%20AND%20code_insee%3D%27${code}%27&limit=100&refine=libelle_profession%3A%22M%C3%A9decin%20g%C3%A9n%C3%A9raliste%22`;
+    const response = await fetch(urlMedecin);
+    if (!response.ok) return res.status(500).json({ error: "Erreur récupération médecins" });
+    const data = await response.json();
+    medecinsCount = data.results.length;
+  }
+
+  // 3. Calcul du taux
+  const nbHabByMed = medecinsCount > 0 ? population / medecinsCount : 0;
+
+  res.json({
+    codeCommune: code,
+    population,
+    medecinsCount,
+    nbHabByMed
+  });
+});
+
+
+
 module.exports = app;

@@ -106,6 +106,30 @@ paths:
                   $ref: '#/components/schemas/Medecin'
         '400':
           description: Coordonnées invalides
+  /departements/73/nombre-habitant-par-medecin/{code}:
+    get:
+      summary: Nombre d'habitant par médecin par code Insee dans le département 73
+      parameters:
+        - name: code
+          in: path
+          required: true
+          description: Code INSEE de la commune
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Taux de médecins par habitant
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nombreMedecins:
+                    type: integer
+                  populationTotale:
+                    type: integer
+                  tauxMedecinsParHabitant:
+                    type: number
 
 components:
   schemas:
