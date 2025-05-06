@@ -40,11 +40,9 @@ interface Doctor {
   latitude: number;
 }
 
-async function fetchNearbyDoctors(lat: number, lon: number): Promise<Doctor[]> {
+async function fetchAllDoctors(): Promise<Doctor[]> {
   const response = await fetch(
-    `${
-      import.meta.env.VITE_BACKEND_URL
-    }/recherche/medecins?lat=${lat}&lon=${lon}`
+    `${import.meta.env.VITE_BACKEND_URL}/departements/73/medecins`
   );
 
   if (!response.ok) {
@@ -79,11 +77,7 @@ function DoctorsClusters({
   });
 
   return (
-    <MarkerClusterGroup
-      chunkedLoading
-      scrollWheelZoom
-      showCoverageOnHover
-    >
+    <MarkerClusterGroup chunkedLoading scrollWheelZoom showCoverageOnHover>
       {nearbyDoctors?.map((doctor, index) => (
         <Marker
           key={`doctor-${index}`}
@@ -105,10 +99,9 @@ function DoctorsClusters({
 export function MapComponent({ location }: Readonly<MapComponentProps>) {
   const [center, setCenter] = useState(DEFAULT_CENTER);
 
-  const { data: nearbyDoctors } = useQuery({
-    queryKey: ["doctors", center.lat, center.lng],
-    queryFn: () => fetchNearbyDoctors(center.lat, center.lng),
-    enabled: !!center.lat && !!center.lng,
+  const { data: doctors } = useQuery({
+    queryKey: ["doctors"],
+    queryFn: () => fetchAllDoctors(),
   });
 
   useEffect(() => {
@@ -130,7 +123,7 @@ export function MapComponent({ location }: Readonly<MapComponentProps>) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <DoctorsClusters nearbyDoctors={nearbyDoctors} />
+      <DoctorsClusters nearbyDoctors={doctors} />
     </MapContainer>
   );
 }

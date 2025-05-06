@@ -55,7 +55,10 @@ app.get('/departements/73/medecins', async (req, res) => {
       const medecinsReponse = data.map(medecin => 
       ({
           nom: medecin.nom,
-          adresse: medecin.adresse
+          adresse: medecin.adresse,
+          longitude: medecin.coordonnees.lon,
+          latitude: medecin.coordonnees.lat,
+
         })
       );
 
@@ -71,7 +74,9 @@ app.get('/departements/73/medecins', async (req, res) => {
       if (regex.test(medecin.adresse)) {
         medecinsReponse.push({
           nom: medecin.nom,
-          adresse: medecin.adresse
+          adresse: medecin.adresse,
+          longitude: medecin.coordonnees.lon,
+          latitude: medecin.coordonnees.lat,
         });
       }
     }
